@@ -3,7 +3,7 @@ description: "the module show how to define a entity model in juneflow."
 #publish_to: 'none'
 repository: https://github.com/juneflow-songdo/june_model
 
-version: 1.0.6
+version: 1.0.7
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
@@ -19,8 +19,6 @@ dependencies:
   flutter_zoom_drawer:
   gap:
   go_router:
-  hive: ^4.0.0-dev.2
-  isar_flutter_libs: ^4.0.0-dev.14
   june:
   june_flow_util:
   keyboard_attachable:
@@ -36,7 +34,6 @@ dev_dependencies:
   flutter_lints_module:
   flutter_test:
     sdk: flutter
-  hive_module: #@add
   june_view: #@add
   june_view_more: #@add
   screenutil_module:
@@ -44,5 +41,6 @@ dev_dependencies:
 
 flutter:
   assets:
+    - assets/module/config_theme/
     - assets/module/june_model/
   uses-material-design: true
