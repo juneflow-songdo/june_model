@@ -313,49 +313,49 @@ class NewModel {
   // List<dynamic> L019 = [];
   // List<dynamic> L020 = [];
 
-  // NewSub2Model C000 = NewSub2Model();
-  // NewSub2Model C001 = NewSub2Model();
-  // NewSub2Model C002 = NewSub2Model();
-  // NewSub2Model C003 = NewSub2Model();
-  // NewSub2Model C004 = NewSub2Model();
-  // NewSub2Model C005 = NewSub2Model();
-  // NewSub2Model C006 = NewSub2Model();
-  // NewSub2Model C007 = NewSub2Model();
-  // NewSub2Model C008 = NewSub2Model();
-  // NewSub2Model C009 = NewSub2Model();
-  // NewSub2Model C010 = NewSub2Model();
-  // NewSub2Model C011 = NewSub2Model();
-  // NewSub2Model C012 = NewSub2Model();
-  // NewSub2Model C013 = NewSub2Model();
-  // NewSub2Model C014 = NewSub2Model();
-  // NewSub2Model C015 = NewSub2Model();
-  // NewSub2Model C016 = NewSub2Model();
-  // NewSub2Model C017 = NewSub2Model();
-  // NewSub2Model C018 = NewSub2Model();
-  // NewSub2Model C019 = NewSub2Model();
-  // NewSub2Model C020 = NewSub2Model();
+  // OtherModel C000 = OtherModel();
+  // OtherModel C001 = OtherModel();
+  // OtherModel C002 = OtherModel();
+  // OtherModel C003 = OtherModel();
+  // OtherModel C004 = OtherModel();
+  // OtherModel C005 = OtherModel();
+  // OtherModel C006 = OtherModel();
+  // OtherModel C007 = OtherModel();
+  // OtherModel C008 = OtherModel();
+  // OtherModel C009 = OtherModel();
+  // OtherModel C010 = OtherModel();
+  // OtherModel C011 = OtherModel();
+  // OtherModel C012 = OtherModel();
+  // OtherModel C013 = OtherModel();
+  // OtherModel C014 = OtherModel();
+  // OtherModel C015 = OtherModel();
+  // OtherModel C016 = OtherModel();
+  // OtherModel C017 = OtherModel();
+  // OtherModel C018 = OtherModel();
+  // OtherModel C019 = OtherModel();
+  // OtherModel C020 = OtherModel();
   //
-  // List<NewSub2Model> J000 = [];
-  // List<NewSub2Model> J001 = [];
-  // List<NewSub2Model> J002 = [];
-  // List<NewSub2Model> J003 = [];
-  // List<NewSub2Model> J004 = [];
-  // List<NewSub2Model> J005 = [];
-  // List<NewSub2Model> J006 = [];
-  // List<NewSub2Model> J007 = [];
-  // List<NewSub2Model> J008 = [];
-  // List<NewSub2Model> J009 = [];
-  // List<NewSub2Model> J010 = [];
-  // List<NewSub2Model> J011 = [];
-  // List<NewSub2Model> J012 = [];
-  // List<NewSub2Model> J013 = [];
-  // List<NewSub2Model> J014 = [];
-  // List<NewSub2Model> J015 = [];
-  // List<NewSub2Model> J016 = [];
-  // List<NewSub2Model> J017 = [];
-  // List<NewSub2Model> J018 = [];
-  // List<NewSub2Model> J019 = [];
-  // List<NewSub2Model> J020 = [];
+  // List<OtherModel> J000 = [];
+  // List<OtherModel> J001 = [];
+  // List<OtherModel> J002 = [];
+  // List<OtherModel> J003 = [];
+  // List<OtherModel> J004 = [];
+  // List<OtherModel> J005 = [];
+  // List<OtherModel> J006 = [];
+  // List<OtherModel> J007 = [];
+  // List<OtherModel> J008 = [];
+  // List<OtherModel> J009 = [];
+  // List<OtherModel> J010 = [];
+  // List<OtherModel> J011 = [];
+  // List<OtherModel> J012 = [];
+  // List<OtherModel> J013 = [];
+  // List<OtherModel> J014 = [];
+  // List<OtherModel> J015 = [];
+  // List<OtherModel> J016 = [];
+  // List<OtherModel> J017 = [];
+  // List<OtherModel> J018 = [];
+  // List<OtherModel> J019 = [];
+  // List<OtherModel> J020 = [];
 
   // NewEnum E000 = NewEnum.NotSelected;
   // NewEnum E001 = NewEnum.NotSelected;
@@ -379,9 +379,16 @@ class NewModel {
   // NewEnum E019 = NewEnum.NotSelected;
   // NewEnum E020 = NewEnum.NotSelected;
 
-  @override
-  String toString() {
-    return jsonEncode({
+  String toUrlString() {
+    return Uri(scheme: 'https', host: 'junestory.com', queryParameters: _toQueryParameters()).toString();
+  }
+
+  String toBase64QueryString() {
+    return base64.encode(utf8.encode(Uri.parse(toUrlString()).query));
+  }
+
+  Map<String, dynamic> _toQueryParameters() {
+    return {
       'I000': I000,
       // 'I001': I001,
       // 'I002': I002,
@@ -665,70 +672,69 @@ class NewModel {
       // 'T018': T018.millisecondsSinceEpoch,
       // 'T019': T019.millisecondsSinceEpoch,
       // 'T020': T020.millisecondsSinceEpoch,
-      // 'L000': L000,
-      // 'L001': L001,
-      // 'L002': L002,
-      // 'L003': L003,
-      // 'L004': L004,
-      // 'L005': L005,
-      // 'L006': L006,
-      // 'L007': L007,
-      // 'L008': L008,
-      // 'L009': L009,
-      // 'L010': L010,
-      // 'L011': L011,
-      // 'L012': L012,
-      // 'L013': L013,
-      // 'L014': L014,
-      // 'L015': L015,
-      // 'L016': L016,
-      // 'L017': L017,
-      // 'L018': L018,
-      // 'L019': L019,
-      // 'L020': L020,
-      // 'C000': C000.toString(),
-      // 'C001': C001.toString(),
-      // 'C002': C002.toString(),
-      // 'C003': C003.toString(),
-      // 'C004': C004.toString(),
-      // 'C005': C005.toString(),
-      // 'C006': C006.toString(),
-      // 'C007': C007.toString(),
-      // 'C008': C008.toString(),
-      // 'C009': C009.toString(),
-      // 'C010': C010.toString(),
-      // 'C011': C011.toString(),
-      // 'C012': C012.toString(),
-      // 'C013': C013.toString(),
-      // 'C014': C014.toString(),
-      // 'C015': C015.toString(),
-      // 'C016': C016.toString(),
-      // 'C017': C017.toString(),
-      // 'C018': C018.toString(),
-      // 'C019': C019.toString(),
-      // 'C020': C020.toString(),
-      // 'J000': jsonEncode(J000.map((model) => model.toString()).toList()),
-      // 'J001': jsonEncode(J001.map((model) => model.toString()).toList()),
-      // 'J002': jsonEncode(J002.map((model) => model.toString()).toList()),
-      // 'J003': jsonEncode(J003.map((model) => model.toString()).toList()),
-      // 'J004': jsonEncode(J004.map((model) => model.toString()).toList()),
-      // 'J005': jsonEncode(J005.map((model) => model.toString()).toList()),
-      // 'J006': jsonEncode(J006.map((model) => model.toString()).toList()),
-      // 'J007': jsonEncode(J007.map((model) => model.toString()).toList()),
-      // 'J008': jsonEncode(J008.map((model) => model.toString()).toList()),
-      // 'J009': jsonEncode(J009.map((model) => model.toString()).toList()),
-      // 'J010': jsonEncode(J010.map((model) => model.toString()).toList()),
-      // 'J011': jsonEncode(J011.map((model) => model.toString()).toList()),
-      // 'J012': jsonEncode(J012.map((model) => model.toString()).toList()),
-      // 'J013': jsonEncode(J013.map((model) => model.toString()).toList()),
-      // 'J014': jsonEncode(J014.map((model) => model.toString()).toList()),
-      // 'J015': jsonEncode(J015.map((model) => model.toString()).toList()),
-      // 'J016': jsonEncode(J016.map((model) => model.toString()).toList()),
-      // 'J017': jsonEncode(J017.map((model) => model.toString()).toList()),
-      // 'J018': jsonEncode(J018.map((model) => model.toString()).toList()),
-      // 'J019': jsonEncode(J019.map((model) => model.toString()).toList()),
-      // 'J020': jsonEncode(J020.map((model) => model.toString()).toList()),
-
+      // 'L000': json.encode(L000),
+      // 'L001': json.encode(L001),
+      // 'L002': json.encode(L002),
+      // 'L003': json.encode(L003),
+      // 'L004': json.encode(L004),
+      // 'L005': json.encode(L005),
+      // 'L006': json.encode(L006),
+      // 'L007': json.encode(L007),
+      // 'L008': json.encode(L008),
+      // 'L009': json.encode(L009),
+      // 'L010': json.encode(L010),
+      // 'L011': json.encode(L011),
+      // 'L012': json.encode(L012),
+      // 'L013': json.encode(L013),
+      // 'L014': json.encode(L014),
+      // 'L015': json.encode(L015),
+      // 'L016': json.encode(L016),
+      // 'L017': json.encode(L017),
+      // 'L018': json.encode(L018),
+      // 'L019': json.encode(L019),
+      // 'L020': json.encode(L020),
+      // 'C000': C000.toBase64QueryString(),
+      // 'C001': C001.toBase64QueryString(),
+      // 'C002': C002.toBase64QueryString(),
+      // 'C003': C003.toBase64QueryString(),
+      // 'C004': C004.toBase64QueryString(),
+      // 'C005': C005.toBase64QueryString(),
+      // 'C006': C006.toBase64QueryString(),
+      // 'C007': C007.toBase64QueryString(),
+      // 'C008': C008.toBase64QueryString(),
+      // 'C009': C009.toBase64QueryString(),
+      // 'C010': C010.toBase64QueryString(),
+      // 'C011': C011.toBase64QueryString(),
+      // 'C012': C012.toBase64QueryString(),
+      // 'C013': C013.toBase64QueryString(),
+      // 'C014': C014.toBase64QueryString(),
+      // 'C015': C015.toBase64QueryString(),
+      // 'C016': C016.toBase64QueryString(),
+      // 'C017': C017.toBase64QueryString(),
+      // 'C018': C018.toBase64QueryString(),
+      // 'C019': C019.toBase64QueryString(),
+      // 'C020': C020.toBase64QueryString(),
+      // 'J000': jsonEncode(J000.map((model) => model.toBase64QueryString()).toList()),
+      // 'J001': jsonEncode(J001.map((model) => model.toBase64QueryString()).toList()),
+      // 'J002': jsonEncode(J002.map((model) => model.toBase64QueryString()).toList()),
+      // 'J003': jsonEncode(J003.map((model) => model.toBase64QueryString()).toList()),
+      // 'J004': jsonEncode(J004.map((model) => model.toBase64QueryString()).toList()),
+      // 'J005': jsonEncode(J005.map((model) => model.toBase64QueryString()).toList()),
+      // 'J006': jsonEncode(J006.map((model) => model.toBase64QueryString()).toList()),
+      // 'J007': jsonEncode(J007.map((model) => model.toBase64QueryString()).toList()),
+      // 'J008': jsonEncode(J008.map((model) => model.toBase64QueryString()).toList()),
+      // 'J009': jsonEncode(J009.map((model) => model.toBase64QueryString()).toList()),
+      // 'J010': jsonEncode(J010.map((model) => model.toBase64QueryString()).toList()),
+      // 'J011': jsonEncode(J011.map((model) => model.toBase64QueryString()).toList()),
+      // 'J012': jsonEncode(J012.map((model) => model.toBase64QueryString()).toList()),
+      // 'J013': jsonEncode(J013.map((model) => model.toBase64QueryString()).toList()),
+      // 'J014': jsonEncode(J014.map((model) => model.toBase64QueryString()).toList()),
+      // 'J015': jsonEncode(J015.map((model) => model.toBase64QueryString()).toList()),
+      // 'J016': jsonEncode(J016.map((model) => model.toBase64QueryString()).toList()),
+      // 'J017': jsonEncode(J017.map((model) => model.toBase64QueryString()).toList()),
+      // 'J018': jsonEncode(J018.map((model) => model.toBase64QueryString()).toList()),
+      // 'J019': jsonEncode(J019.map((model) => model.toBase64QueryString()).toList()),
+      // 'J020': jsonEncode(J020.map((model) => model.toBase64QueryString()).toList()),
       // 'E000': E000.toStringValue(),
       // 'E001': E001.toStringValue(),
       // 'E002': E002.toStringValue(),
@@ -750,755 +756,388 @@ class NewModel {
       // 'E018': E018.toStringValue(),
       // 'E019': E019.toStringValue(),
       // 'E020': E020.toStringValue(),
-    });
+    };
   }
 
-  // JSON 문자열을 이용하여 Person 객체를 생성
-  static NewModel fromString(String jsonString) {
-    final data = jsonDecode(jsonString);
+  static NewModel fromUrlString(String urlString) {
+    return _fromQueryParams(Uri.parse(urlString).queryParameters);
+  }
+
+  static NewModel fromBase64QueryString(String queryUrlString) {
+    return _fromQueryParams(Uri.splitQueryString(utf8.decode(base64.decode(queryUrlString))));
+  }
+
+  static NewModel _fromQueryParams(Map<String, String> queryParams) {
     var obj = NewModel();
 
-    obj.I000 = data['I000'] ?? 0;
-    // obj.I001 = data['I001'] ?? 0;
-    // obj.I002 = data['I002'] ?? 0;
-    // obj.I003 = data['I003'] ?? 0;
-    // obj.I004 = data['I004'] ?? 0;
-    // obj.I005 = data['I005'] ?? 0;
-    // obj.I006 = data['I006'] ?? 0;
-    // obj.I007 = data['I007'] ?? 0;
-    // obj.I008 = data['I008'] ?? 0;
-    // obj.I009 = data['I009'] ?? 0;
-    // obj.I010 = data['I010'] ?? 0;
-    // obj.I011 = data['I011'] ?? 0;
-    // obj.I012 = data['I012'] ?? 0;
-    // obj.I013 = data['I013'] ?? 0;
-    // obj.I014 = data['I014'] ?? 0;
-    // obj.I015 = data['I015'] ?? 0;
-    // obj.I016 = data['I016'] ?? 0;
-    // obj.I017 = data['I017'] ?? 0;
-    // obj.I018 = data['I018'] ?? 0;
-    // obj.I019 = data['I019'] ?? 0;
-    // obj.I020 = data['I020'] ?? 0;
-    // obj.I021 = data['I021'] ?? 0;
-    // obj.I022 = data['I022'] ?? 0;
-    // obj.I023 = data['I023'] ?? 0;
-    // obj.I024 = data['I024'] ?? 0;
-    // obj.I025 = data['I025'] ?? 0;
-    // obj.I026 = data['I026'] ?? 0;
-    // obj.I027 = data['I027'] ?? 0;
-    // obj.I028 = data['I028'] ?? 0;
-    // obj.I029 = data['I029'] ?? 0;
-    // obj.I030 = data['I030'] ?? 0;
-    // obj.I031 = data['I031'] ?? 0;
-    // obj.I032 = data['I032'] ?? 0;
-    // obj.I033 = data['I033'] ?? 0;
-    // obj.I034 = data['I034'] ?? 0;
-    // obj.I035 = data['I035'] ?? 0;
-    // obj.I036 = data['I036'] ?? 0;
-    // obj.I037 = data['I037'] ?? 0;
-    // obj.I038 = data['I038'] ?? 0;
-    // obj.I039 = data['I039'] ?? 0;
-    // obj.I040 = data['I040'] ?? 0;
-    // obj.I041 = data['I041'] ?? 0;
-    // obj.I042 = data['I042'] ?? 0;
-    // obj.I043 = data['I043'] ?? 0;
-    // obj.I044 = data['I044'] ?? 0;
-    // obj.I045 = data['I045'] ?? 0;
-    // obj.I046 = data['I046'] ?? 0;
-    // obj.I047 = data['I047'] ?? 0;
-    // obj.I048 = data['I048'] ?? 0;
-    // obj.I049 = data['I049'] ?? 0;
-    // obj.I050 = data['I050'] ?? 0;
-    // obj.I051 = data['I051'] ?? 0;
-    // obj.I052 = data['I052'] ?? 0;
-    // obj.I053 = data['I053'] ?? 0;
-    // obj.I054 = data['I054'] ?? 0;
-    // obj.I055 = data['I055'] ?? 0;
-    // obj.I056 = data['I056'] ?? 0;
-    // obj.I057 = data['I057'] ?? 0;
-    // obj.I058 = data['I058'] ?? 0;
-    // obj.I059 = data['I059'] ?? 0;
-    // obj.I060 = data['I060'] ?? 0;
-    // obj.I061 = data['I061'] ?? 0;
-    // obj.I062 = data['I062'] ?? 0;
-    // obj.I063 = data['I063'] ?? 0;
-    // obj.I064 = data['I064'] ?? 0;
-    // obj.I065 = data['I065'] ?? 0;
-    // obj.I066 = data['I066'] ?? 0;
-    // obj.I067 = data['I067'] ?? 0;
-    // obj.I068 = data['I068'] ?? 0;
-    // obj.I069 = data['I069'] ?? 0;
-    // obj.I070 = data['I070'] ?? 0;
-    // obj.I071 = data['I071'] ?? 0;
-    // obj.I072 = data['I072'] ?? 0;
-    // obj.I073 = data['I073'] ?? 0;
-    // obj.I074 = data['I074'] ?? 0;
-    // obj.I075 = data['I075'] ?? 0;
-    // obj.I076 = data['I076'] ?? 0;
-    // obj.I077 = data['I077'] ?? 0;
-    // obj.I078 = data['I078'] ?? 0;
-    // obj.I079 = data['I079'] ?? 0;
-    // obj.I080 = data['I080'] ?? 0;
-    // obj.I081 = data['I081'] ?? 0;
-    // obj.I082 = data['I082'] ?? 0;
-    // obj.I083 = data['I083'] ?? 0;
-    // obj.I084 = data['I084'] ?? 0;
-    // obj.I085 = data['I085'] ?? 0;
-    // obj.I086 = data['I086'] ?? 0;
-    // obj.I087 = data['I087'] ?? 0;
-    // obj.I088 = data['I088'] ?? 0;
-    // obj.I089 = data['I089'] ?? 0;
-    // obj.I090 = data['I090'] ?? 0;
-    // obj.I091 = data['I091'] ?? 0;
-    // obj.I092 = data['I092'] ?? 0;
-    // obj.I093 = data['I093'] ?? 0;
-    // obj.I094 = data['I094'] ?? 0;
-    // obj.I095 = data['I095'] ?? 0;
-    // obj.I096 = data['I096'] ?? 0;
-    // obj.I097 = data['I097'] ?? 0;
-    // obj.I098 = data['I098'] ?? 0;
-    // obj.I099 = data['I099'] ?? 0;
-    // obj.S000 = data['S000'] ?? "";
-    // obj.S001 = data['S001'] ?? "";
-    // obj.S002 = data['S002'] ?? "";
-    // obj.S003 = data['S003'] ?? "";
-    // obj.S004 = data['S004'] ?? "";
-    // obj.S005 = data['S005'] ?? "";
-    // obj.S006 = data['S006'] ?? "";
-    // obj.S007 = data['S007'] ?? "";
-    // obj.S008 = data['S008'] ?? "";
-    // obj.S009 = data['S009'] ?? "";
-    // obj.S010 = data['S010'] ?? "";
-    // obj.S011 = data['S011'] ?? "";
-    // obj.S012 = data['S012'] ?? "";
-    // obj.S013 = data['S013'] ?? "";
-    // obj.S014 = data['S014'] ?? "";
-    // obj.S015 = data['S015'] ?? "";
-    // obj.S016 = data['S016'] ?? "";
-    // obj.S017 = data['S017'] ?? "";
-    // obj.S018 = data['S018'] ?? "";
-    // obj.S019 = data['S019'] ?? "";
-    // obj.S020 = data['S020'] ?? "";
-    // obj.S021 = data['S021'] ?? "";
-    // obj.S022 = data['S022'] ?? "";
-    // obj.S023 = data['S023'] ?? "";
-    // obj.S024 = data['S024'] ?? "";
-    // obj.S025 = data['S025'] ?? "";
-    // obj.S026 = data['S026'] ?? "";
-    // obj.S027 = data['S027'] ?? "";
-    // obj.S028 = data['S028'] ?? "";
-    // obj.S029 = data['S029'] ?? "";
-    // obj.S030 = data['S030'] ?? "";
-    // obj.S031 = data['S031'] ?? "";
-    // obj.S032 = data['S032'] ?? "";
-    // obj.S033 = data['S033'] ?? "";
-    // obj.S034 = data['S034'] ?? "";
-    // obj.S035 = data['S035'] ?? "";
-    // obj.S036 = data['S036'] ?? "";
-    // obj.S037 = data['S037'] ?? "";
-    // obj.S038 = data['S038'] ?? "";
-    // obj.S039 = data['S039'] ?? "";
-    // obj.S040 = data['S040'] ?? "";
-    // obj.S041 = data['S041'] ?? "";
-    // obj.S042 = data['S042'] ?? "";
-    // obj.S043 = data['S043'] ?? "";
-    // obj.S044 = data['S044'] ?? "";
-    // obj.S045 = data['S045'] ?? "";
-    // obj.S046 = data['S046'] ?? "";
-    // obj.S047 = data['S047'] ?? "";
-    // obj.S048 = data['S048'] ?? "";
-    // obj.S049 = data['S049'] ?? "";
-    // obj.S050 = data['S050'] ?? "";
-    // obj.S051 = data['S051'] ?? "";
-    // obj.S052 = data['S052'] ?? "";
-    // obj.S053 = data['S053'] ?? "";
-    // obj.S054 = data['S054'] ?? "";
-    // obj.S055 = data['S055'] ?? "";
-    // obj.S056 = data['S056'] ?? "";
-    // obj.S057 = data['S057'] ?? "";
-    // obj.S058 = data['S058'] ?? "";
-    // obj.S059 = data['S059'] ?? "";
-    // obj.S060 = data['S060'] ?? "";
-    // obj.S061 = data['S061'] ?? "";
-    // obj.S062 = data['S062'] ?? "";
-    // obj.S063 = data['S063'] ?? "";
-    // obj.S064 = data['S064'] ?? "";
-    // obj.S065 = data['S065'] ?? "";
-    // obj.S066 = data['S066'] ?? "";
-    // obj.S067 = data['S067'] ?? "";
-    // obj.S068 = data['S068'] ?? "";
-    // obj.S069 = data['S069'] ?? "";
-    // obj.S070 = data['S070'] ?? "";
-    // obj.S071 = data['S071'] ?? "";
-    // obj.S072 = data['S072'] ?? "";
-    // obj.S073 = data['S073'] ?? "";
-    // obj.S074 = data['S074'] ?? "";
-    // obj.S075 = data['S075'] ?? "";
-    // obj.S076 = data['S076'] ?? "";
-    // obj.S077 = data['S077'] ?? "";
-    // obj.S078 = data['S078'] ?? "";
-    // obj.S079 = data['S079'] ?? "";
-    // obj.S080 = data['S080'] ?? "";
-    // obj.S081 = data['S081'] ?? "";
-    // obj.S082 = data['S082'] ?? "";
-    // obj.S083 = data['S083'] ?? "";
-    // obj.S084 = data['S084'] ?? "";
-    // obj.S085 = data['S085'] ?? "";
-    // obj.S086 = data['S086'] ?? "";
-    // obj.S087 = data['S087'] ?? "";
-    // obj.S088 = data['S088'] ?? "";
-    // obj.S089 = data['S089'] ?? "";
-    // obj.S090 = data['S090'] ?? "";
-    // obj.S091 = data['S091'] ?? "";
-    // obj.S092 = data['S092'] ?? "";
-    // obj.S093 = data['S093'] ?? "";
-    // obj.S094 = data['S094'] ?? "";
-    // obj.S095 = data['S095'] ?? "";
-    // obj.S096 = data['S096'] ?? "";
-    // obj.S097 = data['S097'] ?? "";
-    // obj.S098 = data['S098'] ?? "";
-    // obj.S099 = data['S099'] ?? "";
-    // obj.B000 = data['B000'] ?? false;
-    // obj.B001 = data['B001'] ?? false;
-    // obj.B002 = data['B002'] ?? false;
-    // obj.B003 = data['B003'] ?? false;
-    // obj.B004 = data['B004'] ?? false;
-    // obj.B005 = data['B005'] ?? false;
-    // obj.B006 = data['B006'] ?? false;
-    // obj.B007 = data['B007'] ?? false;
-    // obj.B008 = data['B008'] ?? false;
-    // obj.B009 = data['B009'] ?? false;
-    // obj.B010 = data['B010'] ?? false;
-    // obj.B011 = data['B011'] ?? false;
-    // obj.B012 = data['B012'] ?? false;
-    // obj.B013 = data['B013'] ?? false;
-    // obj.B014 = data['B014'] ?? false;
-    // obj.B015 = data['B015'] ?? false;
-    // obj.B016 = data['B016'] ?? false;
-    // obj.B017 = data['B017'] ?? false;
-    // obj.B018 = data['B018'] ?? false;
-    // obj.B019 = data['B019'] ?? false;
-    // obj.B020 = data['B020'] ?? false;
-    // obj.B021 = data['B021'] ?? false;
-    // obj.B022 = data['B022'] ?? false;
-    // obj.B023 = data['B023'] ?? false;
-    // obj.B024 = data['B024'] ?? false;
-    // obj.B025 = data['B025'] ?? false;
-    // obj.B026 = data['B026'] ?? false;
-    // obj.B027 = data['B027'] ?? false;
-    // obj.B028 = data['B028'] ?? false;
-    // obj.B029 = data['B029'] ?? false;
-    // obj.B030 = data['B030'] ?? false;
-    // obj.R000 = data['R000'] ?? 0;
-    // obj.R001 = data['R001'] ?? 0;
-    // obj.R002 = data['R002'] ?? 0;
-    // obj.R003 = data['R003'] ?? 0;
-    // obj.R004 = data['R004'] ?? 0;
-    // obj.R005 = data['R005'] ?? 0;
-    // obj.R006 = data['R006'] ?? 0;
-    // obj.R007 = data['R007'] ?? 0;
-    // obj.R008 = data['R008'] ?? 0;
-    // obj.R009 = data['R009'] ?? 0;
-    // obj.R010 = data['R010'] ?? 0;
-    // obj.R011 = data['R011'] ?? 0;
-    // obj.R012 = data['R012'] ?? 0;
-    // obj.R013 = data['R013'] ?? 0;
-    // obj.R014 = data['R014'] ?? 0;
-    // obj.R015 = data['R015'] ?? 0;
-    // obj.R016 = data['R016'] ?? 0;
-    // obj.R017 = data['R017'] ?? 0;
-    // obj.R018 = data['R018'] ?? 0;
-    // obj.R019 = data['R019'] ?? 0;
-    // obj.R020 = data['R020'] ?? 0;
-    // obj.R021 = data['R021'] ?? 0;
-    // obj.R022 = data['R022'] ?? 0;
-    // obj.R023 = data['R023'] ?? 0;
-    // obj.R024 = data['R024'] ?? 0;
-    // obj.R025 = data['R025'] ?? 0;
-    // obj.R026 = data['R026'] ?? 0;
-    // obj.R027 = data['R027'] ?? 0;
-    // obj.R028 = data['R028'] ?? 0;
-    // obj.R029 = data['R029'] ?? 0;
-    // obj.R030 = data['R030'] ?? 0;
-    // obj.T000 = DateTime.fromMillisecondsSinceEpoch(data['T000'] ?? 0);
-    // obj.T001 = DateTime.fromMillisecondsSinceEpoch(data['T001'] ?? 0);
-    // obj.T002 = DateTime.fromMillisecondsSinceEpoch(data['T002'] ?? 0);
-    // obj.T003 = DateTime.fromMillisecondsSinceEpoch(data['T003'] ?? 0);
-    // obj.T004 = DateTime.fromMillisecondsSinceEpoch(data['T004'] ?? 0);
-    // obj.T005 = DateTime.fromMillisecondsSinceEpoch(data['T005'] ?? 0);
-    // obj.T006 = DateTime.fromMillisecondsSinceEpoch(data['T006'] ?? 0);
-    // obj.T007 = DateTime.fromMillisecondsSinceEpoch(data['T007'] ?? 0);
-    // obj.T008 = DateTime.fromMillisecondsSinceEpoch(data['T008'] ?? 0);
-    // obj.T009 = DateTime.fromMillisecondsSinceEpoch(data['T009'] ?? 0);
-    // obj.T010 = DateTime.fromMillisecondsSinceEpoch(data['T010'] ?? 0);
-    // obj.T011 = DateTime.fromMillisecondsSinceEpoch(data['T011'] ?? 0);
-    // obj.T012 = DateTime.fromMillisecondsSinceEpoch(data['T012'] ?? 0);
-    // obj.T013 = DateTime.fromMillisecondsSinceEpoch(data['T013'] ?? 0);
-    // obj.T014 = DateTime.fromMillisecondsSinceEpoch(data['T014'] ?? 0);
-    // obj.T015 = DateTime.fromMillisecondsSinceEpoch(data['T015'] ?? 0);
-    // obj.T016 = DateTime.fromMillisecondsSinceEpoch(data['T016'] ?? 0);
-    // obj.T017 = DateTime.fromMillisecondsSinceEpoch(data['T017'] ?? 0);
-    // obj.T018 = DateTime.fromMillisecondsSinceEpoch(data['T018'] ?? 0);
-    // obj.T019 = DateTime.fromMillisecondsSinceEpoch(data['T019'] ?? 0);
-    // obj.T020 = DateTime.fromMillisecondsSinceEpoch(data['T020'] ?? 0);
-    // obj.L000 = List<String>.from(data['L000'] ?? []);
-    // obj.L001 = List<String>.from(data['L001'] ?? []);
-    // obj.L002 = List<String>.from(data['L002'] ?? []);
-    // obj.L003 = List<String>.from(data['L003'] ?? []);
-    // obj.L004 = List<String>.from(data['L004'] ?? []);
-    // obj.L005 = List<String>.from(data['L005'] ?? []);
-    // obj.L006 = List<String>.from(data['L006'] ?? []);
-    // obj.L007 = List<String>.from(data['L007'] ?? []);
-    // obj.L008 = List<String>.from(data['L008'] ?? []);
-    // obj.L009 = List<String>.from(data['L009'] ?? []);
-    // obj.L010 = List<String>.from(data['L010'] ?? []);
-    // obj.L011 = List<String>.from(data['L011'] ?? []);
-    // obj.L012 = List<String>.from(data['L012'] ?? []);
-    // obj.L013 = List<String>.from(data['L013'] ?? []);
-    // obj.L014 = List<String>.from(data['L014'] ?? []);
-    // obj.L015 = List<String>.from(data['L015'] ?? []);
-    // obj.L016 = List<String>.from(data['L016'] ?? []);
-    // obj.L017 = List<String>.from(data['L017'] ?? []);
-    // obj.L018 = List<String>.from(data['L018'] ?? []);
-    // obj.L019 = List<String>.from(data['L019'] ?? []);
-    // obj.L020 = List<String>.from(data['L020'] ?? []);
-
-    // obj.C000 = NewSub2Model.fromString(data['C000'] ?? NewSub2Model().toString());
-    // obj.C001 = NewSub2Model.fromString(data['C001'] ?? NewSub2Model().toString());
-    // obj.C002 = NewSub2Model.fromString(data['C002'] ?? NewSub2Model().toString());
-    // obj.C003 = NewSub2Model.fromString(data['C003'] ?? NewSub2Model().toString());
-    // obj.C004 = NewSub2Model.fromString(data['C004'] ?? NewSub2Model().toString());
-    // obj.C005 = NewSub2Model.fromString(data['C005'] ?? NewSub2Model().toString());
-    // obj.C006 = NewSub2Model.fromString(data['C006'] ?? NewSub2Model().toString());
-    // obj.C007 = NewSub2Model.fromString(data['C007'] ?? NewSub2Model().toString());
-    // obj.C008 = NewSub2Model.fromString(data['C008'] ?? NewSub2Model().toString());
-    // obj.C009 = NewSub2Model.fromString(data['C009'] ?? NewSub2Model().toString());
-    // obj.C010 = NewSub2Model.fromString(data['C010'] ?? NewSub2Model().toString());
-    // obj.C011 = NewSub2Model.fromString(data['C011'] ?? NewSub2Model().toString());
-    // obj.C012 = NewSub2Model.fromString(data['C012'] ?? NewSub2Model().toString());
-    // obj.C013 = NewSub2Model.fromString(data['C013'] ?? NewSub2Model().toString());
-    // obj.C014 = NewSub2Model.fromString(data['C014'] ?? NewSub2Model().toString());
-    // obj.C015 = NewSub2Model.fromString(data['C015'] ?? NewSub2Model().toString());
-    // obj.C016 = NewSub2Model.fromString(data['C016'] ?? NewSub2Model().toString());
-    // obj.C017 = NewSub2Model.fromString(data['C017'] ?? NewSub2Model().toString());
-    // obj.C018 = NewSub2Model.fromString(data['C018'] ?? NewSub2Model().toString());
-    // obj.C019 = NewSub2Model.fromString(data['C019'] ?? NewSub2Model().toString());
-    // obj.C020 = NewSub2Model.fromString(data['C020'] ?? NewSub2Model().toString());
-
-    // obj.J000 = List<String>.from(data['J000'] is String ? jsonDecode(data['J000']) : (data['J000'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J001 = List<String>.from(data['J001'] is String ? jsonDecode(data['J001']) : (data['J001'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J002 = List<String>.from(data['J002'] is String ? jsonDecode(data['J002']) : (data['J002'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J003 = List<String>.from(data['J003'] is String ? jsonDecode(data['J003']) : (data['J003'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J004 = List<String>.from(data['J004'] is String ? jsonDecode(data['J004']) : (data['J004'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J005 = List<String>.from(data['J005'] is String ? jsonDecode(data['J005']) : (data['J005'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J006 = List<String>.from(data['J006'] is String ? jsonDecode(data['J006']) : (data['J006'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J007 = List<String>.from(data['J007'] is String ? jsonDecode(data['J007']) : (data['J007'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J008 = List<String>.from(data['J008'] is String ? jsonDecode(data['J008']) : (data['J008'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J009 = List<String>.from(data['J009'] is String ? jsonDecode(data['J009']) : (data['J009'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J010 = List<String>.from(data['J010'] is String ? jsonDecode(data['J010']) : (data['J010'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J011 = List<String>.from(data['J011'] is String ? jsonDecode(data['J011']) : (data['J011'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J012 = List<String>.from(data['J012'] is String ? jsonDecode(data['J012']) : (data['J012'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J013 = List<String>.from(data['J013'] is String ? jsonDecode(data['J013']) : (data['J013'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J014 = List<String>.from(data['J014'] is String ? jsonDecode(data['J014']) : (data['J014'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J015 = List<String>.from(data['J015'] is String ? jsonDecode(data['J015']) : (data['J015'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J016 = List<String>.from(data['J016'] is String ? jsonDecode(data['J016']) : (data['J016'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J017 = List<String>.from(data['J017'] is String ? jsonDecode(data['J017']) : (data['J017'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J018 = List<String>.from(data['J018'] is String ? jsonDecode(data['J018']) : (data['J018'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J019 = List<String>.from(data['J019'] is String ? jsonDecode(data['J019']) : (data['J019'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-    // obj.J020 = List<String>.from(data['J020'] is String ? jsonDecode(data['J020']) : (data['J020'] ?? [])).map((item) => NewSub2Model.fromString(item)).toList();
-
-    // obj.E000 = NewEnum.fromString(data['E000'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E001 = NewEnum.fromString(data['E001'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E002 = NewEnum.fromString(data['E002'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E003 = NewEnum.fromString(data['E003'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E004 = NewEnum.fromString(data['E004'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E005 = NewEnum.fromString(data['E005'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E006 = NewEnum.fromString(data['E006'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E007 = NewEnum.fromString(data['E007'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E008 = NewEnum.fromString(data['E008'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E009 = NewEnum.fromString(data['E009'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E010 = NewEnum.fromString(data['E010'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E011 = NewEnum.fromString(data['E011'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E012 = NewEnum.fromString(data['E012'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E013 = NewEnum.fromString(data['E013'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E014 = NewEnum.fromString(data['E014'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E015 = NewEnum.fromString(data['E015'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E016 = NewEnum.fromString(data['E016'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E017 = NewEnum.fromString(data['E017'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E018 = NewEnum.fromString(data['E018'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E019 = NewEnum.fromString(data['E019'] ?? NewEnum.NotSelected.toStringValue());
-    // obj.E020 = NewEnum.fromString(data['E020'] ?? NewEnum.NotSelected.toStringValue());
+    obj.I000 = int.tryParse(queryParams['I000'] ?? "0") ?? 0;
+    // obj.I001 = int.tryParse(queryParams['I001'] ?? "0") ?? 0;
+    // obj.I002 = int.tryParse(queryParams['I002'] ?? "0") ?? 0;
+    // obj.I003 = int.tryParse(queryParams['I003'] ?? "0") ?? 0;
+    // obj.I004 = int.tryParse(queryParams['I004'] ?? "0") ?? 0;
+    // obj.I005 = int.tryParse(queryParams['I005'] ?? "0") ?? 0;
+    // obj.I006 = int.tryParse(queryParams['I006'] ?? "0") ?? 0;
+    // obj.I007 = int.tryParse(queryParams['I007'] ?? "0") ?? 0;
+    // obj.I008 = int.tryParse(queryParams['I008'] ?? "0") ?? 0;
+    // obj.I009 = int.tryParse(queryParams['I009'] ?? "0") ?? 0;
+    // obj.I010 = int.tryParse(queryParams['I010'] ?? "0") ?? 0;
+    // obj.I011 = int.tryParse(queryParams['I011'] ?? "0") ?? 0;
+    // obj.I012 = int.tryParse(queryParams['I012'] ?? "0") ?? 0;
+    // obj.I013 = int.tryParse(queryParams['I013'] ?? "0") ?? 0;
+    // obj.I014 = int.tryParse(queryParams['I014'] ?? "0") ?? 0;
+    // obj.I015 = int.tryParse(queryParams['I015'] ?? "0") ?? 0;
+    // obj.I016 = int.tryParse(queryParams['I016'] ?? "0") ?? 0;
+    // obj.I017 = int.tryParse(queryParams['I017'] ?? "0") ?? 0;
+    // obj.I018 = int.tryParse(queryParams['I018'] ?? "0") ?? 0;
+    // obj.I019 = int.tryParse(queryParams['I019'] ?? "0") ?? 0;
+    // obj.I020 = int.tryParse(queryParams['I020'] ?? "0") ?? 0;
+    // obj.I021 = int.tryParse(queryParams['I021'] ?? "0") ?? 0;
+    // obj.I022 = int.tryParse(queryParams['I022'] ?? "0") ?? 0;
+    // obj.I023 = int.tryParse(queryParams['I023'] ?? "0") ?? 0;
+    // obj.I024 = int.tryParse(queryParams['I024'] ?? "0") ?? 0;
+    // obj.I025 = int.tryParse(queryParams['I025'] ?? "0") ?? 0;
+    // obj.I026 = int.tryParse(queryParams['I026'] ?? "0") ?? 0;
+    // obj.I027 = int.tryParse(queryParams['I027'] ?? "0") ?? 0;
+    // obj.I028 = int.tryParse(queryParams['I028'] ?? "0") ?? 0;
+    // obj.I029 = int.tryParse(queryParams['I029'] ?? "0") ?? 0;
+    // obj.I030 = int.tryParse(queryParams['I030'] ?? "0") ?? 0;
+    // obj.I031 = int.tryParse(queryParams['I031'] ?? "0") ?? 0;
+    // obj.I032 = int.tryParse(queryParams['I032'] ?? "0") ?? 0;
+    // obj.I033 = int.tryParse(queryParams['I033'] ?? "0") ?? 0;
+    // obj.I034 = int.tryParse(queryParams['I034'] ?? "0") ?? 0;
+    // obj.I035 = int.tryParse(queryParams['I035'] ?? "0") ?? 0;
+    // obj.I036 = int.tryParse(queryParams['I036'] ?? "0") ?? 0;
+    // obj.I037 = int.tryParse(queryParams['I037'] ?? "0") ?? 0;
+    // obj.I038 = int.tryParse(queryParams['I038'] ?? "0") ?? 0;
+    // obj.I039 = int.tryParse(queryParams['I039'] ?? "0") ?? 0;
+    // obj.I040 = int.tryParse(queryParams['I040'] ?? "0") ?? 0;
+    // obj.I041 = int.tryParse(queryParams['I041'] ?? "0") ?? 0;
+    // obj.I042 = int.tryParse(queryParams['I042'] ?? "0") ?? 0;
+    // obj.I043 = int.tryParse(queryParams['I043'] ?? "0") ?? 0;
+    // obj.I044 = int.tryParse(queryParams['I044'] ?? "0") ?? 0;
+    // obj.I045 = int.tryParse(queryParams['I045'] ?? "0") ?? 0;
+    // obj.I046 = int.tryParse(queryParams['I046'] ?? "0") ?? 0;
+    // obj.I047 = int.tryParse(queryParams['I047'] ?? "0") ?? 0;
+    // obj.I048 = int.tryParse(queryParams['I048'] ?? "0") ?? 0;
+    // obj.I049 = int.tryParse(queryParams['I049'] ?? "0") ?? 0;
+    // obj.I050 = int.tryParse(queryParams['I050'] ?? "0") ?? 0;
+    // obj.I051 = int.tryParse(queryParams['I051'] ?? "0") ?? 0;
+    // obj.I052 = int.tryParse(queryParams['I052'] ?? "0") ?? 0;
+    // obj.I053 = int.tryParse(queryParams['I053'] ?? "0") ?? 0;
+    // obj.I054 = int.tryParse(queryParams['I054'] ?? "0") ?? 0;
+    // obj.I055 = int.tryParse(queryParams['I055'] ?? "0") ?? 0;
+    // obj.I056 = int.tryParse(queryParams['I056'] ?? "0") ?? 0;
+    // obj.I057 = int.tryParse(queryParams['I057'] ?? "0") ?? 0;
+    // obj.I058 = int.tryParse(queryParams['I058'] ?? "0") ?? 0;
+    // obj.I059 = int.tryParse(queryParams['I059'] ?? "0") ?? 0;
+    // obj.I060 = int.tryParse(queryParams['I060'] ?? "0") ?? 0;
+    // obj.I061 = int.tryParse(queryParams['I061'] ?? "0") ?? 0;
+    // obj.I062 = int.tryParse(queryParams['I062'] ?? "0") ?? 0;
+    // obj.I063 = int.tryParse(queryParams['I063'] ?? "0") ?? 0;
+    // obj.I064 = int.tryParse(queryParams['I064'] ?? "0") ?? 0;
+    // obj.I065 = int.tryParse(queryParams['I065'] ?? "0") ?? 0;
+    // obj.I066 = int.tryParse(queryParams['I066'] ?? "0") ?? 0;
+    // obj.I067 = int.tryParse(queryParams['I067'] ?? "0") ?? 0;
+    // obj.I068 = int.tryParse(queryParams['I068'] ?? "0") ?? 0;
+    // obj.I069 = int.tryParse(queryParams['I069'] ?? "0") ?? 0;
+    // obj.I070 = int.tryParse(queryParams['I070'] ?? "0") ?? 0;
+    // obj.I071 = int.tryParse(queryParams['I071'] ?? "0") ?? 0;
+    // obj.I072 = int.tryParse(queryParams['I072'] ?? "0") ?? 0;
+    // obj.I073 = int.tryParse(queryParams['I073'] ?? "0") ?? 0;
+    // obj.I074 = int.tryParse(queryParams['I074'] ?? "0") ?? 0;
+    // obj.I075 = int.tryParse(queryParams['I075'] ?? "0") ?? 0;
+    // obj.I076 = int.tryParse(queryParams['I076'] ?? "0") ?? 0;
+    // obj.I077 = int.tryParse(queryParams['I077'] ?? "0") ?? 0;
+    // obj.I078 = int.tryParse(queryParams['I078'] ?? "0") ?? 0;
+    // obj.I079 = int.tryParse(queryParams['I079'] ?? "0") ?? 0;
+    // obj.I080 = int.tryParse(queryParams['I080'] ?? "0") ?? 0;
+    // obj.I081 = int.tryParse(queryParams['I081'] ?? "0") ?? 0;
+    // obj.I082 = int.tryParse(queryParams['I082'] ?? "0") ?? 0;
+    // obj.I083 = int.tryParse(queryParams['I083'] ?? "0") ?? 0;
+    // obj.I084 = int.tryParse(queryParams['I084'] ?? "0") ?? 0;
+    // obj.I085 = int.tryParse(queryParams['I085'] ?? "0") ?? 0;
+    // obj.I086 = int.tryParse(queryParams['I086'] ?? "0") ?? 0;
+    // obj.I087 = int.tryParse(queryParams['I087'] ?? "0") ?? 0;
+    // obj.I088 = int.tryParse(queryParams['I088'] ?? "0") ?? 0;
+    // obj.I089 = int.tryParse(queryParams['I089'] ?? "0") ?? 0;
+    // obj.I090 = int.tryParse(queryParams['I090'] ?? "0") ?? 0;
+    // obj.I091 = int.tryParse(queryParams['I091'] ?? "0") ?? 0;
+    // obj.I092 = int.tryParse(queryParams['I092'] ?? "0") ?? 0;
+    // obj.I093 = int.tryParse(queryParams['I093'] ?? "0") ?? 0;
+    // obj.I094 = int.tryParse(queryParams['I094'] ?? "0") ?? 0;
+    // obj.I095 = int.tryParse(queryParams['I095'] ?? "0") ?? 0;
+    // obj.I096 = int.tryParse(queryParams['I096'] ?? "0") ?? 0;
+    // obj.I097 = int.tryParse(queryParams['I097'] ?? "0") ?? 0;
+    // obj.I098 = int.tryParse(queryParams['I098'] ?? "0") ?? 0;
+    // obj.I099 = int.tryParse(queryParams['I099'] ?? "0") ?? 0;
+    // obj.S000 = queryParams['S000'] ?? "";
+    // obj.S001 = queryParams['S001'] ?? "";
+    // obj.S002 = queryParams['S002'] ?? "";
+    // obj.S003 = queryParams['S003'] ?? "";
+    // obj.S004 = queryParams['S004'] ?? "";
+    // obj.S005 = queryParams['S005'] ?? "";
+    // obj.S006 = queryParams['S006'] ?? "";
+    // obj.S007 = queryParams['S007'] ?? "";
+    // obj.S008 = queryParams['S008'] ?? "";
+    // obj.S009 = queryParams['S009'] ?? "";
+    // obj.S010 = queryParams['S010'] ?? "";
+    // obj.S011 = queryParams['S011'] ?? "";
+    // obj.S012 = queryParams['S012'] ?? "";
+    // obj.S013 = queryParams['S013'] ?? "";
+    // obj.S014 = queryParams['S014'] ?? "";
+    // obj.S015 = queryParams['S015'] ?? "";
+    // obj.S016 = queryParams['S016'] ?? "";
+    // obj.S017 = queryParams['S017'] ?? "";
+    // obj.S018 = queryParams['S018'] ?? "";
+    // obj.S019 = queryParams['S019'] ?? "";
+    // obj.S020 = queryParams['S020'] ?? "";
+    // obj.S021 = queryParams['S021'] ?? "";
+    // obj.S022 = queryParams['S022'] ?? "";
+    // obj.S023 = queryParams['S023'] ?? "";
+    // obj.S024 = queryParams['S024'] ?? "";
+    // obj.S025 = queryParams['S025'] ?? "";
+    // obj.S026 = queryParams['S026'] ?? "";
+    // obj.S027 = queryParams['S027'] ?? "";
+    // obj.S028 = queryParams['S028'] ?? "";
+    // obj.S029 = queryParams['S029'] ?? "";
+    // obj.S030 = queryParams['S030'] ?? "";
+    // obj.S031 = queryParams['S031'] ?? "";
+    // obj.S032 = queryParams['S032'] ?? "";
+    // obj.S033 = queryParams['S033'] ?? "";
+    // obj.S034 = queryParams['S034'] ?? "";
+    // obj.S035 = queryParams['S035'] ?? "";
+    // obj.S036 = queryParams['S036'] ?? "";
+    // obj.S037 = queryParams['S037'] ?? "";
+    // obj.S038 = queryParams['S038'] ?? "";
+    // obj.S039 = queryParams['S039'] ?? "";
+    // obj.S040 = queryParams['S040'] ?? "";
+    // obj.S041 = queryParams['S041'] ?? "";
+    // obj.S042 = queryParams['S042'] ?? "";
+    // obj.S043 = queryParams['S043'] ?? "";
+    // obj.S044 = queryParams['S044'] ?? "";
+    // obj.S045 = queryParams['S045'] ?? "";
+    // obj.S046 = queryParams['S046'] ?? "";
+    // obj.S047 = queryParams['S047'] ?? "";
+    // obj.S048 = queryParams['S048'] ?? "";
+    // obj.S049 = queryParams['S049'] ?? "";
+    // obj.S050 = queryParams['S050'] ?? "";
+    // obj.S051 = queryParams['S051'] ?? "";
+    // obj.S052 = queryParams['S052'] ?? "";
+    // obj.S053 = queryParams['S053'] ?? "";
+    // obj.S054 = queryParams['S054'] ?? "";
+    // obj.S055 = queryParams['S055'] ?? "";
+    // obj.S056 = queryParams['S056'] ?? "";
+    // obj.S057 = queryParams['S057'] ?? "";
+    // obj.S058 = queryParams['S058'] ?? "";
+    // obj.S059 = queryParams['S059'] ?? "";
+    // obj.S060 = queryParams['S060'] ?? "";
+    // obj.S061 = queryParams['S061'] ?? "";
+    // obj.S062 = queryParams['S062'] ?? "";
+    // obj.S063 = queryParams['S063'] ?? "";
+    // obj.S064 = queryParams['S064'] ?? "";
+    // obj.S065 = queryParams['S065'] ?? "";
+    // obj.S066 = queryParams['S066'] ?? "";
+    // obj.S067 = queryParams['S067'] ?? "";
+    // obj.S068 = queryParams['S068'] ?? "";
+    // obj.S069 = queryParams['S069'] ?? "";
+    // obj.S070 = queryParams['S070'] ?? "";
+    // obj.S071 = queryParams['S071'] ?? "";
+    // obj.S072 = queryParams['S072'] ?? "";
+    // obj.S073 = queryParams['S073'] ?? "";
+    // obj.S074 = queryParams['S074'] ?? "";
+    // obj.S075 = queryParams['S075'] ?? "";
+    // obj.S076 = queryParams['S076'] ?? "";
+    // obj.S077 = queryParams['S077'] ?? "";
+    // obj.S078 = queryParams['S078'] ?? "";
+    // obj.S079 = queryParams['S079'] ?? "";
+    // obj.S080 = queryParams['S080'] ?? "";
+    // obj.S081 = queryParams['S081'] ?? "";
+    // obj.S082 = queryParams['S082'] ?? "";
+    // obj.S083 = queryParams['S083'] ?? "";
+    // obj.S084 = queryParams['S084'] ?? "";
+    // obj.S085 = queryParams['S085'] ?? "";
+    // obj.S086 = queryParams['S086'] ?? "";
+    // obj.S087 = queryParams['S087'] ?? "";
+    // obj.S088 = queryParams['S088'] ?? "";
+    // obj.S089 = queryParams['S089'] ?? "";
+    // obj.S090 = queryParams['S090'] ?? "";
+    // obj.S091 = queryParams['S091'] ?? "";
+    // obj.S092 = queryParams['S092'] ?? "";
+    // obj.S093 = queryParams['S093'] ?? "";
+    // obj.S094 = queryParams['S094'] ?? "";
+    // obj.S095 = queryParams['S095'] ?? "";
+    // obj.S096 = queryParams['S096'] ?? "";
+    // obj.S097 = queryParams['S097'] ?? "";
+    // obj.S098 = queryParams['S098'] ?? "";
+    // obj.S099 = queryParams['S099'] ?? "";
+    // obj.B000 = (queryParams['B000'] ?? "false") == "true";
+    // obj.B001 = (queryParams['B001'] ?? "false") == "true";
+    // obj.B002 = (queryParams['B002'] ?? "false") == "true";
+    // obj.B003 = (queryParams['B003'] ?? "false") == "true";
+    // obj.B004 = (queryParams['B004'] ?? "false") == "true";
+    // obj.B005 = (queryParams['B005'] ?? "false") == "true";
+    // obj.B006 = (queryParams['B006'] ?? "false") == "true";
+    // obj.B007 = (queryParams['B007'] ?? "false") == "true";
+    // obj.B008 = (queryParams['B008'] ?? "false") == "true";
+    // obj.B009 = (queryParams['B009'] ?? "false") == "true";
+    // obj.B010 = (queryParams['B010'] ?? "false") == "true";
+    // obj.B011 = (queryParams['B011'] ?? "false") == "true";
+    // obj.B012 = (queryParams['B012'] ?? "false") == "true";
+    // obj.B013 = (queryParams['B013'] ?? "false") == "true";
+    // obj.B014 = (queryParams['B014'] ?? "false") == "true";
+    // obj.B015 = (queryParams['B015'] ?? "false") == "true";
+    // obj.B016 = (queryParams['B016'] ?? "false") == "true";
+    // obj.B017 = (queryParams['B017'] ?? "false") == "true";
+    // obj.B018 = (queryParams['B018'] ?? "false") == "true";
+    // obj.B019 = (queryParams['B019'] ?? "false") == "true";
+    // obj.B020 = (queryParams['B020'] ?? "false") == "true";
+    // obj.B021 = (queryParams['B021'] ?? "false") == "true";
+    // obj.B022 = (queryParams['B022'] ?? "false") == "true";
+    // obj.B023 = (queryParams['B023'] ?? "false") == "true";
+    // obj.B024 = (queryParams['B024'] ?? "false") == "true";
+    // obj.B025 = (queryParams['B025'] ?? "false") == "true";
+    // obj.B026 = (queryParams['B026'] ?? "false") == "true";
+    // obj.B027 = (queryParams['B027'] ?? "false") == "true";
+    // obj.B028 = (queryParams['B028'] ?? "false") == "true";
+    // obj.B029 = (queryParams['B029'] ?? "false") == "true";
+    // obj.B030 = (queryParams['B030'] ?? "false") == "true";
+    // obj.R000 = double.tryParse(queryParams['R000'] ?? "0.0") ?? 0.0;
+    // obj.R001 = double.tryParse(queryParams['R001'] ?? "0.0") ?? 0.0;
+    // obj.R002 = double.tryParse(queryParams['R002'] ?? "0.0") ?? 0.0;
+    // obj.R003 = double.tryParse(queryParams['R003'] ?? "0.0") ?? 0.0;
+    // obj.R004 = double.tryParse(queryParams['R004'] ?? "0.0") ?? 0.0;
+    // obj.R005 = double.tryParse(queryParams['R005'] ?? "0.0") ?? 0.0;
+    // obj.R006 = double.tryParse(queryParams['R006'] ?? "0.0") ?? 0.0;
+    // obj.R007 = double.tryParse(queryParams['R007'] ?? "0.0") ?? 0.0;
+    // obj.R008 = double.tryParse(queryParams['R008'] ?? "0.0") ?? 0.0;
+    // obj.R009 = double.tryParse(queryParams['R009'] ?? "0.0") ?? 0.0;
+    // obj.R010 = double.tryParse(queryParams['R010'] ?? "0.0") ?? 0.0;
+    // obj.R011 = double.tryParse(queryParams['R011'] ?? "0.0") ?? 0.0;
+    // obj.R012 = double.tryParse(queryParams['R012'] ?? "0.0") ?? 0.0;
+    // obj.R013 = double.tryParse(queryParams['R013'] ?? "0.0") ?? 0.0;
+    // obj.R014 = double.tryParse(queryParams['R014'] ?? "0.0") ?? 0.0;
+    // obj.R015 = double.tryParse(queryParams['R015'] ?? "0.0") ?? 0.0;
+    // obj.R016 = double.tryParse(queryParams['R016'] ?? "0.0") ?? 0.0;
+    // obj.R017 = double.tryParse(queryParams['R017'] ?? "0.0") ?? 0.0;
+    // obj.R018 = double.tryParse(queryParams['R018'] ?? "0.0") ?? 0.0;
+    // obj.R019 = double.tryParse(queryParams['R019'] ?? "0.0") ?? 0.0;
+    // obj.R020 = double.tryParse(queryParams['R020'] ?? "0.0") ?? 0.0;
+    // obj.R021 = double.tryParse(queryParams['R021'] ?? "0.0") ?? 0.0;
+    // obj.R022 = double.tryParse(queryParams['R022'] ?? "0.0") ?? 0.0;
+    // obj.R023 = double.tryParse(queryParams['R023'] ?? "0.0") ?? 0.0;
+    // obj.R024 = double.tryParse(queryParams['R024'] ?? "0.0") ?? 0.0;
+    // obj.R025 = double.tryParse(queryParams['R025'] ?? "0.0") ?? 0.0;
+    // obj.R026 = double.tryParse(queryParams['R026'] ?? "0.0") ?? 0.0;
+    // obj.R027 = double.tryParse(queryParams['R027'] ?? "0.0") ?? 0.0;
+    // obj.R028 = double.tryParse(queryParams['R028'] ?? "0.0") ?? 0.0;
+    // obj.R029 = double.tryParse(queryParams['R029'] ?? "0.0") ?? 0.0;
+    // obj.R030 = double.tryParse(queryParams['R030'] ?? "0.0") ?? 0.0;
+    // obj.T000 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T000'] ?? "0") ?? 0);
+    // obj.T001 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T001'] ?? "0") ?? 0);
+    // obj.T002 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T002'] ?? "0") ?? 0);
+    // obj.T003 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T003'] ?? "0") ?? 0);
+    // obj.T004 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T004'] ?? "0") ?? 0);
+    // obj.T005 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T005'] ?? "0") ?? 0);
+    // obj.T006 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T006'] ?? "0") ?? 0);
+    // obj.T007 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T007'] ?? "0") ?? 0);
+    // obj.T008 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T008'] ?? "0") ?? 0);
+    // obj.T009 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T009'] ?? "0") ?? 0);
+    // obj.T010 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T010'] ?? "0") ?? 0);
+    // obj.T011 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T011'] ?? "0") ?? 0);
+    // obj.T012 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T012'] ?? "0") ?? 0);
+    // obj.T013 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T013'] ?? "0") ?? 0);
+    // obj.T014 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T014'] ?? "0") ?? 0);
+    // obj.T015 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T015'] ?? "0") ?? 0);
+    // obj.T016 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T016'] ?? "0") ?? 0);
+    // obj.T017 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T017'] ?? "0") ?? 0);
+    // obj.T018 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T018'] ?? "0") ?? 0);
+    // obj.T019 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T019'] ?? "0") ?? 0);
+    // obj.T020 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T020'] ?? "0") ?? 0);
+    // obj.L000 = List<String>.from(json.decode(queryParams['L000'] ?? "[]") ?? []);
+    // obj.L001 = List<String>.from(json.decode(queryParams['L001'] ?? "[]") ?? []);
+    // obj.L002 = List<String>.from(json.decode(queryParams['L002'] ?? "[]") ?? []);
+    // obj.L003 = List<String>.from(json.decode(queryParams['L003'] ?? "[]") ?? []);
+    // obj.L004 = List<String>.from(json.decode(queryParams['L004'] ?? "[]") ?? []);
+    // obj.L005 = List<String>.from(json.decode(queryParams['L005'] ?? "[]") ?? []);
+    // obj.L006 = List<String>.from(json.decode(queryParams['L006'] ?? "[]") ?? []);
+    // obj.L007 = List<String>.from(json.decode(queryParams['L007'] ?? "[]") ?? []);
+    // obj.L008 = List<String>.from(json.decode(queryParams['L008'] ?? "[]") ?? []);
+    // obj.L009 = List<String>.from(json.decode(queryParams['L009'] ?? "[]") ?? []);
+    // obj.L010 = List<String>.from(json.decode(queryParams['L010'] ?? "[]") ?? []);
+    // obj.L011 = List<String>.from(json.decode(queryParams['L011'] ?? "[]") ?? []);
+    // obj.L012 = List<String>.from(json.decode(queryParams['L012'] ?? "[]") ?? []);
+    // obj.L013 = List<String>.from(json.decode(queryParams['L013'] ?? "[]") ?? []);
+    // obj.L014 = List<String>.from(json.decode(queryParams['L014'] ?? "[]") ?? []);
+    // obj.L015 = List<String>.from(json.decode(queryParams['L015'] ?? "[]") ?? []);
+    // obj.L016 = List<String>.from(json.decode(queryParams['L016'] ?? "[]") ?? []);
+    // obj.L017 = List<String>.from(json.decode(queryParams['L017'] ?? "[]") ?? []);
+    // obj.L018 = List<String>.from(json.decode(queryParams['L018'] ?? "[]") ?? []);
+    // obj.L019 = List<String>.from(json.decode(queryParams['L019'] ?? "[]") ?? []);
+    // obj.L020 = List<String>.from(json.decode(queryParams['L020'] ?? "[]") ?? []);
+    // obj.C000 = OtherModel.fromBase64QueryString(queryParams['C000'] ?? OtherModel().toBase64QueryString());
+    // obj.C001 = OtherModel.fromBase64QueryString(queryParams['C001'] ?? OtherModel().toBase64QueryString());
+    // obj.C002 = OtherModel.fromBase64QueryString(queryParams['C002'] ?? OtherModel().toBase64QueryString());
+    // obj.C003 = OtherModel.fromBase64QueryString(queryParams['C003'] ?? OtherModel().toBase64QueryString());
+    // obj.C004 = OtherModel.fromBase64QueryString(queryParams['C004'] ?? OtherModel().toBase64QueryString());
+    // obj.C005 = OtherModel.fromBase64QueryString(queryParams['C005'] ?? OtherModel().toBase64QueryString());
+    // obj.C006 = OtherModel.fromBase64QueryString(queryParams['C006'] ?? OtherModel().toBase64QueryString());
+    // obj.C007 = OtherModel.fromBase64QueryString(queryParams['C007'] ?? OtherModel().toBase64QueryString());
+    // obj.C008 = OtherModel.fromBase64QueryString(queryParams['C008'] ?? OtherModel().toBase64QueryString());
+    // obj.C009 = OtherModel.fromBase64QueryString(queryParams['C009'] ?? OtherModel().toBase64QueryString());
+    // obj.C010 = OtherModel.fromBase64QueryString(queryParams['C010'] ?? OtherModel().toBase64QueryString());
+    // obj.C011 = OtherModel.fromBase64QueryString(queryParams['C011'] ?? OtherModel().toBase64QueryString());
+    // obj.C012 = OtherModel.fromBase64QueryString(queryParams['C012'] ?? OtherModel().toBase64QueryString());
+    // obj.C013 = OtherModel.fromBase64QueryString(queryParams['C013'] ?? OtherModel().toBase64QueryString());
+    // obj.C014 = OtherModel.fromBase64QueryString(queryParams['C014'] ?? OtherModel().toBase64QueryString());
+    // obj.C015 = OtherModel.fromBase64QueryString(queryParams['C015'] ?? OtherModel().toBase64QueryString());
+    // obj.C016 = OtherModel.fromBase64QueryString(queryParams['C016'] ?? OtherModel().toBase64QueryString());
+    // obj.C017 = OtherModel.fromBase64QueryString(queryParams['C017'] ?? OtherModel().toBase64QueryString());
+    // obj.C018 = OtherModel.fromBase64QueryString(queryParams['C018'] ?? OtherModel().toBase64QueryString());
+    // obj.C019 = OtherModel.fromBase64QueryString(queryParams['C019'] ?? OtherModel().toBase64QueryString());
+    // obj.C020 = OtherModel.fromBase64QueryString(queryParams['C020'] ?? OtherModel().toBase64QueryString());
+    // obj.J000 = List<String>.from(json.decode(queryParams['J000'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J001 = List<String>.from(json.decode(queryParams['J001'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J002 = List<String>.from(json.decode(queryParams['J002'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J003 = List<String>.from(json.decode(queryParams['J003'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J004 = List<String>.from(json.decode(queryParams['J004'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J005 = List<String>.from(json.decode(queryParams['J005'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J006 = List<String>.from(json.decode(queryParams['J006'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J007 = List<String>.from(json.decode(queryParams['J007'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J008 = List<String>.from(json.decode(queryParams['J008'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J009 = List<String>.from(json.decode(queryParams['J009'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J010 = List<String>.from(json.decode(queryParams['J010'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J011 = List<String>.from(json.decode(queryParams['J011'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J012 = List<String>.from(json.decode(queryParams['J012'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J013 = List<String>.from(json.decode(queryParams['J013'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J014 = List<String>.from(json.decode(queryParams['J014'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J015 = List<String>.from(json.decode(queryParams['J015'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J016 = List<String>.from(json.decode(queryParams['J016'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J017 = List<String>.from(json.decode(queryParams['J017'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J018 = List<String>.from(json.decode(queryParams['J018'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J019 = List<String>.from(json.decode(queryParams['J019'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.J020 = List<String>.from(json.decode(queryParams['J020'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.E000 = NewEnum.fromString(queryParams['E000'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E001 = NewEnum.fromString(queryParams['E001'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E002 = NewEnum.fromString(queryParams['E002'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E003 = NewEnum.fromString(queryParams['E003'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E004 = NewEnum.fromString(queryParams['E004'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E005 = NewEnum.fromString(queryParams['E005'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E006 = NewEnum.fromString(queryParams['E006'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E007 = NewEnum.fromString(queryParams['E007'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E008 = NewEnum.fromString(queryParams['E008'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E009 = NewEnum.fromString(queryParams['E009'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E010 = NewEnum.fromString(queryParams['E010'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E011 = NewEnum.fromString(queryParams['E011'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E012 = NewEnum.fromString(queryParams['E012'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E013 = NewEnum.fromString(queryParams['E013'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E014 = NewEnum.fromString(queryParams['E014'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E015 = NewEnum.fromString(queryParams['E015'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E016 = NewEnum.fromString(queryParams['E016'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E017 = NewEnum.fromString(queryParams['E017'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E018 = NewEnum.fromString(queryParams['E018'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E019 = NewEnum.fromString(queryParams['E019'] ?? NewEnum.NotSelected.toStringValue());
+    // obj.E020 = NewEnum.fromString(queryParams['E020'] ?? NewEnum.NotSelected.toStringValue());
 
     return obj;
   }
 }
-
-var paramListNewModel = [
-  ["I000", "integer", "0"],
-  // ["I001", "integer", "0"],
-  // ["I002", "integer", "0"],
-  // ["I003", "integer", "0"],
-  // ["I004", "integer", "0"],
-  // ["I005", "integer", "0"],
-  // ["I006", "integer", "0"],
-  // ["I007", "integer", "0"],
-  // ["I008", "integer", "0"],
-  // ["I009", "integer", "0"],
-  // ["I010", "integer", "0"],
-  // ["I011", "integer", "0"],
-  // ["I012", "integer", "0"],
-  // ["I013", "integer", "0"],
-  // ["I014", "integer", "0"],
-  // ["I015", "integer", "0"],
-  // ["I016", "integer", "0"],
-  // ["I017", "integer", "0"],
-  // ["I018", "integer", "0"],
-  // ["I019", "integer", "0"],
-  // ["I020", "integer", "0"],
-  // ["I021", "integer", "0"],
-  // ["I022", "integer", "0"],
-  // ["I023", "integer", "0"],
-  // ["I024", "integer", "0"],
-  // ["I025", "integer", "0"],
-  // ["I026", "integer", "0"],
-  // ["I027", "integer", "0"],
-  // ["I028", "integer", "0"],
-  // ["I029", "integer", "0"],
-  // ["I030", "integer", "0"],
-  // ["I031", "integer", "0"],
-  // ["I032", "integer", "0"],
-  // ["I033", "integer", "0"],
-  // ["I034", "integer", "0"],
-  // ["I035", "integer", "0"],
-  // ["I036", "integer", "0"],
-  // ["I037", "integer", "0"],
-  // ["I038", "integer", "0"],
-  // ["I039", "integer", "0"],
-  // ["I040", "integer", "0"],
-  // ["I041", "integer", "0"],
-  // ["I042", "integer", "0"],
-  // ["I043", "integer", "0"],
-  // ["I044", "integer", "0"],
-  // ["I045", "integer", "0"],
-  // ["I046", "integer", "0"],
-  // ["I047", "integer", "0"],
-  // ["I048", "integer", "0"],
-  // ["I049", "integer", "0"],
-  // ["I050", "integer", "0"],
-  // ["I051", "integer", "0"],
-  // ["I052", "integer", "0"],
-  // ["I053", "integer", "0"],
-  // ["I054", "integer", "0"],
-  // ["I055", "integer", "0"],
-  // ["I056", "integer", "0"],
-  // ["I057", "integer", "0"],
-  // ["I058", "integer", "0"],
-  // ["I059", "integer", "0"],
-  // ["I060", "integer", "0"],
-  // ["I061", "integer", "0"],
-  // ["I062", "integer", "0"],
-  // ["I063", "integer", "0"],
-  // ["I064", "integer", "0"],
-  // ["I065", "integer", "0"],
-  // ["I066", "integer", "0"],
-  // ["I067", "integer", "0"],
-  // ["I068", "integer", "0"],
-  // ["I069", "integer", "0"],
-  // ["I070", "integer", "0"],
-  // ["I071", "integer", "0"],
-  // ["I072", "integer", "0"],
-  // ["I073", "integer", "0"],
-  // ["I074", "integer", "0"],
-  // ["I075", "integer", "0"],
-  // ["I076", "integer", "0"],
-  // ["I077", "integer", "0"],
-  // ["I078", "integer", "0"],
-  // ["I079", "integer", "0"],
-  // ["I080", "integer", "0"],
-  // ["I081", "integer", "0"],
-  // ["I082", "integer", "0"],
-  // ["I083", "integer", "0"],
-  // ["I084", "integer", "0"],
-  // ["I085", "integer", "0"],
-  // ["I086", "integer", "0"],
-  // ["I087", "integer", "0"],
-  // ["I088", "integer", "0"],
-  // ["I089", "integer", "0"],
-  // ["I090", "integer", "0"],
-  // ["I091", "integer", "0"],
-  // ["I092", "integer", "0"],
-  // ["I093", "integer", "0"],
-  // ["I094", "integer", "0"],
-  // ["I095", "integer", "0"],
-  // ["I096", "integer", "0"],
-  // ["I097", "integer", "0"],
-  // ["I098", "integer", "0"],
-  // ["I099", "integer", "0"],
-  // ["S000", "string", "''"],
-  // ["S001", "string", "''"],
-  // ["S002", "string", "''"],
-  // ["S003", "string", "''"],
-  // ["S004", "string", "''"],
-  // ["S005", "string", "''"],
-  // ["S006", "string", "''"],
-  // ["S007", "string", "''"],
-  // ["S008", "string", "''"],
-  // ["S009", "string", "''"],
-  // ["S010", "string", "''"],
-  // ["S011", "string", "''"],
-  // ["S012", "string", "''"],
-  // ["S013", "string", "''"],
-  // ["S014", "string", "''"],
-  // ["S015", "string", "''"],
-  // ["S016", "string", "''"],
-  // ["S017", "string", "''"],
-  // ["S018", "string", "''"],
-  // ["S019", "string", "''"],
-  // ["S020", "string", "''"],
-  // ["S021", "string", "''"],
-  // ["S022", "string", "''"],
-  // ["S023", "string", "''"],
-  // ["S024", "string", "''"],
-  // ["S025", "string", "''"],
-  // ["S026", "string", "''"],
-  // ["S027", "string", "''"],
-  // ["S028", "string", "''"],
-  // ["S029", "string", "''"],
-  // ["S030", "string", "''"],
-  // ["S031", "string", "''"],
-  // ["S032", "string", "''"],
-  // ["S033", "string", "''"],
-  // ["S034", "string", "''"],
-  // ["S035", "string", "''"],
-  // ["S036", "string", "''"],
-  // ["S037", "string", "''"],
-  // ["S038", "string", "''"],
-  // ["S039", "string", "''"],
-  // ["S040", "string", "''"],
-  // ["S041", "string", "''"],
-  // ["S042", "string", "''"],
-  // ["S043", "string", "''"],
-  // ["S044", "string", "''"],
-  // ["S045", "string", "''"],
-  // ["S046", "string", "''"],
-  // ["S047", "string", "''"],
-  // ["S048", "string", "''"],
-  // ["S049", "string", "''"],
-  // ["S050", "string", "''"],
-  // ["S051", "string", "''"],
-  // ["S052", "string", "''"],
-  // ["S053", "string", "''"],
-  // ["S054", "string", "''"],
-  // ["S055", "string", "''"],
-  // ["S056", "string", "''"],
-  // ["S057", "string", "''"],
-  // ["S058", "string", "''"],
-  // ["S059", "string", "''"],
-  // ["S060", "string", "''"],
-  // ["S061", "string", "''"],
-  // ["S062", "string", "''"],
-  // ["S063", "string", "''"],
-  // ["S064", "string", "''"],
-  // ["S065", "string", "''"],
-  // ["S066", "string", "''"],
-  // ["S067", "string", "''"],
-  // ["S068", "string", "''"],
-  // ["S069", "string", "''"],
-  // ["S070", "string", "''"],
-  // ["S071", "string", "''"],
-  // ["S072", "string", "''"],
-  // ["S073", "string", "''"],
-  // ["S074", "string", "''"],
-  // ["S075", "string", "''"],
-  // ["S076", "string", "''"],
-  // ["S077", "string", "''"],
-  // ["S078", "string", "''"],
-  // ["S079", "string", "''"],
-  // ["S080", "string", "''"],
-  // ["S081", "string", "''"],
-  // ["S082", "string", "''"],
-  // ["S083", "string", "''"],
-  // ["S084", "string", "''"],
-  // ["S085", "string", "''"],
-  // ["S086", "string", "''"],
-  // ["S087", "string", "''"],
-  // ["S088", "string", "''"],
-  // ["S089", "string", "''"],
-  // ["S090", "string", "''"],
-  // ["S091", "string", "''"],
-  // ["S092", "string", "''"],
-  // ["S093", "string", "''"],
-  // ["S094", "string", "''"],
-  // ["S095", "string", "''"],
-  // ["S096", "string", "''"],
-  // ["S097", "string", "''"],
-  // ["S098", "string", "''"],
-  // ["S099", "string", "''"],
-  // ["B000", "boolean", "0"],
-  // ["B001", "boolean", "0"],
-  // ["B002", "boolean", "0"],
-  // ["B003", "boolean", "0"],
-  // ["B004", "boolean", "0"],
-  // ["B005", "boolean", "0"],
-  // ["B006", "boolean", "0"],
-  // ["B007", "boolean", "0"],
-  // ["B008", "boolean", "0"],
-  // ["B009", "boolean", "0"],
-  // ["B010", "boolean", "0"],
-  // ["B011", "boolean", "0"],
-  // ["B012", "boolean", "0"],
-  // ["B013", "boolean", "0"],
-  // ["B014", "boolean", "0"],
-  // ["B015", "boolean", "0"],
-  // ["B016", "boolean", "0"],
-  // ["B017", "boolean", "0"],
-  // ["B018", "boolean", "0"],
-  // ["B019", "boolean", "0"],
-  // ["B020", "boolean", "0"],
-  // ["B021", "boolean", "0"],
-  // ["B022", "boolean", "0"],
-  // ["B023", "boolean", "0"],
-  // ["B024", "boolean", "0"],
-  // ["B025", "boolean", "0"],
-  // ["B026", "boolean", "0"],
-  // ["B027", "boolean", "0"],
-  // ["B028", "boolean", "0"],
-  // ["B029", "boolean", "0"],
-  // ["B030", "boolean", "0"],
-  // ["R000", "real", "0"],
-  // ["R001", "real", "0"],
-  // ["R002", "real", "0"],
-  // ["R003", "real", "0"],
-  // ["R004", "real", "0"],
-  // ["R005", "real", "0"],
-  // ["R006", "real", "0"],
-  // ["R007", "real", "0"],
-  // ["R008", "real", "0"],
-  // ["R009", "real", "0"],
-  // ["R010", "real", "0"],
-  // ["R011", "real", "0"],
-  // ["R012", "real", "0"],
-  // ["R013", "real", "0"],
-  // ["R014", "real", "0"],
-  // ["R015", "real", "0"],
-  // ["R016", "real", "0"],
-  // ["R017", "real", "0"],
-  // ["R018", "real", "0"],
-  // ["R019", "real", "0"],
-  // ["R020", "real", "0"],
-  // ["R021", "real", "0"],
-  // ["R022", "real", "0"],
-  // ["R023", "real", "0"],
-  // ["R024", "real", "0"],
-  // ["R025", "real", "0"],
-  // ["R026", "real", "0"],
-  // ["R027", "real", "0"],
-  // ["R028", "real", "0"],
-  // ["R029", "real", "0"],
-  // ["R030", "real", "0"],
-  // ["T000", "timestamp", "0"],
-  // ["T001", "timestamp", "0"],
-  // ["T002", "timestamp", "0"],
-  // ["T003", "timestamp", "0"],
-  // ["T004", "timestamp", "0"],
-  // ["T005", "timestamp", "0"],
-  // ["T006", "timestamp", "0"],
-  // ["T007", "timestamp", "0"],
-  // ["T008", "timestamp", "0"],
-  // ["T009", "timestamp", "0"],
-  // ["T010", "timestamp", "0"],
-  // ["T011", "timestamp", "0"],
-  // ["T012", "timestamp", "0"],
-  // ["T013", "timestamp", "0"],
-  // ["T014", "timestamp", "0"],
-  // ["T015", "timestamp", "0"],
-  // ["T016", "timestamp", "0"],
-  // ["T017", "timestamp", "0"],
-  // ["T018", "timestamp", "0"],
-  // ["T019", "timestamp", "0"],
-  // ["T020", "timestamp", "0"],
-  // ["L000", "list", "'[]'"],
-  // ["L001", "list", "'[]'"],
-  // ["L002", "list", "'[]'"],
-  // ["L003", "list", "'[]'"],
-  // ["L004", "list", "'[]'"],
-  // ["L005", "list", "'[]'"],
-  // ["L006", "list", "'[]'"],
-  // ["L007", "list", "'[]'"],
-  // ["L008", "list", "'[]'"],
-  // ["L009", "list", "'[]'"],
-  // ["L010", "list", "'[]'"],
-  // ["L011", "list", "'[]'"],
-  // ["L012", "list", "'[]'"],
-  // ["L013", "list", "'[]'"],
-  // ["L014", "list", "'[]'"],
-  // ["L015", "list", "'[]'"],
-  // ["L016", "list", "'[]'"],
-  // ["L017", "list", "'[]'"],
-  // ["L018", "list", "'[]'"],
-  // ["L019", "list", "'[]'"],
-  // ["L020", "list", "'[]'"],
-  // ["C000", "class","'${(NewSub2Model().toString())}'"],
-  // ["C001", "class","'${(NewSub2Model().toString())}'"],
-  // ["C002", "class","'${(NewSub2Model().toString())}'"],
-  // ["C003", "class","'${(NewSub2Model().toString())}'"],
-  // ["C004", "class","'${(NewSub2Model().toString())}'"],
-  // ["C005", "class","'${(NewSub2Model().toString())}'"],
-  // ["C006", "class","'${(NewSub2Model().toString())}'"],
-  // ["C007", "class","'${(NewSub2Model().toString())}'"],
-  // ["C008", "class","'${(NewSub2Model().toString())}'"],
-  // ["C009", "class","'${(NewSub2Model().toString())}'"],
-  // ["C010", "class","'${(NewSub2Model().toString())}'"],
-  // ["C011", "class","'${(NewSub2Model().toString())}'"],
-  // ["C012", "class","'${(NewSub2Model().toString())}'"],
-  // ["C013", "class","'${(NewSub2Model().toString())}'"],
-  // ["C014", "class","'${(NewSub2Model().toString())}'"],
-  // ["C015", "class","'${(NewSub2Model().toString())}'"],
-  // ["C016", "class","'${(NewSub2Model().toString())}'"],
-  // ["C017", "class","'${(NewSub2Model().toString())}'"],
-  // ["C018", "class","'${(NewSub2Model().toString())}'"],
-  // ["C019", "class","'${(NewSub2Model().toString())}'"],
-  // ["C020", "class","'${(NewSub2Model().toString())}'"],
-  // ["J000", "classes","'[]'"],
-  // ["J001", "classes","'[]'"],
-  // ["J002", "classes","'[]'"],
-  // ["J003", "classes","'[]'"],
-  // ["J004", "classes","'[]'"],
-  // ["J005", "classes","'[]'"],
-  // ["J006", "classes","'[]'"],
-  // ["J007", "classes","'[]'"],
-  // ["J008", "classes","'[]'"],
-  // ["J009", "classes","'[]'"],
-  // ["J010", "classes","'[]'"],
-  // ["J011", "classes","'[]'"],
-  // ["J012", "classes","'[]'"],
-  // ["J013", "classes","'[]'"],
-  // ["J014", "classes","'[]'"],
-  // ["J015", "classes","'[]'"],
-  // ["J016", "classes","'[]'"],
-  // ["J017", "classes","'[]'"],
-  // ["J018", "classes","'[]'"],
-  // ["J019", "classes","'[]'"],
-  // ["J020", "classes","'[]'"],
-  // ["E000", "enum","'NotSelected'"],
-  // ["E001", "enum","'NotSelected'"],
-  // ["E002", "enum","'NotSelected'"],
-  // ["E003", "enum","'NotSelected'"],
-  // ["E004", "enum","'NotSelected'"],
-  // ["E005", "enum","'NotSelected'"],
-  // ["E006", "enum","'NotSelected'"],
-  // ["E007", "enum","'NotSelected'"],
-  // ["E008", "enum","'NotSelected'"],
-  // ["E009", "enum","'NotSelected'"],
-  // ["E010", "enum","'NotSelected'"],
-  // ["E011", "enum","'NotSelected'"],
-  // ["E012", "enum","'NotSelected'"],
-  // ["E013", "enum","'NotSelected'"],
-  // ["E014", "enum","'NotSelected'"],
-  // ["E015", "enum","'NotSelected'"],
-  // ["E016", "enum","'NotSelected'"],
-  // ["E017", "enum","'NotSelected'"],
-  // ["E018", "enum","'NotSelected'"],
-  // ["E019", "enum","'NotSelected'"],
-  // ["E020", "enum","'NotSelected'"],
-];
