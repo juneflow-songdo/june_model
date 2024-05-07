@@ -3,7 +3,7 @@ description: "the module show how to define a entity model in juneflow."
 #publish_to: 'none'
 repository: https://github.com/juneflow-songdo/june_model
 
-version: 1.0.10
+version: 1.0.11
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
