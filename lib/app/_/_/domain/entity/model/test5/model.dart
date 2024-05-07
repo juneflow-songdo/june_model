@@ -4,9 +4,9 @@ import 'dart:convert';
 
 import 'config.dart';
 
-class NewModel {
-  NewModel() {
-    DocId = NewModelConfig.generateDocId();
+class Test5Model {
+  Test5Model() {
+    DocId = Test5ModelConfig.generateDocId();
   }
 
   int I000 = 0;
@@ -767,16 +767,16 @@ class NewModel {
     };
   }
 
-  static NewModel fromUrlString(String urlString) {
+  static Test5Model fromUrlString(String urlString) {
     return _fromQueryParams(Uri.parse(urlString).queryParameters);
   }
 
-  static NewModel fromBase64QueryString(String queryUrlString) {
+  static Test5Model fromBase64QueryString(String queryUrlString) {
     return _fromQueryParams(Uri.splitQueryString(utf8.decode(base64.decode(queryUrlString))));
   }
 
-  static NewModel _fromQueryParams(Map<String, String> queryParams) {
-    var obj = NewModel();
+  static Test5Model _fromQueryParams(Map<String, String> queryParams) {
+    var obj = Test5Model();
 
     obj.I000 = int.tryParse(queryParams['I000'] ?? "0") ?? 0;
     // obj.I001 = int.tryParse(queryParams['I001'] ?? "0") ?? 0;

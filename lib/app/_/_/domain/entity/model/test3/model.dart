@@ -2,11 +2,13 @@ import '../../../../../../../main.dart';
 
 import 'dart:convert';
 
+import '../test4/_new/enum.dart';
+import '../test5/model.dart';
 import 'config.dart';
 
-class NewModel {
-  NewModel() {
-    DocId = NewModelConfig.generateDocId();
+class Test3Model {
+  Test3Model() {
+    DocId = Test3ModelConfig.generateDocId();
   }
 
   int I000 = 0;
@@ -111,7 +113,7 @@ class NewModel {
   // int I098 = 0;
   // int I099 = 0;
   //
-  // String S000 = "";
+  String S000 = "";
   // String S001 = "";
   // String S002 = "";
   // String S003 = "";
@@ -212,7 +214,7 @@ class NewModel {
   // String S098 = "";
   // String S099 = "";
   //
-  // bool B000 = false;
+  bool B000 = false;
   // bool B001 = false;
   // bool B002 = false;
   // bool B003 = false;
@@ -244,7 +246,7 @@ class NewModel {
   // bool B029 = false;
   // bool B030 = false;
   //
-  // num R000 = 0;
+  num R000 = 0;
   // num R001 = 0;
   // num R002 = 0;
   // num R003 = 0;
@@ -275,7 +277,7 @@ class NewModel {
   // num R028 = 0;
   // num R029 = 0;
   // num R030 = 0;
-  // DateTime T000 = DateTime.fromMillisecondsSinceEpoch(0);
+  DateTime T000 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime T001 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime T002 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime T003 = DateTime.fromMillisecondsSinceEpoch(0);
@@ -296,7 +298,7 @@ class NewModel {
   // DateTime T018 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime T019 = DateTime.fromMillisecondsSinceEpoch(0);
   // DateTime T020 = DateTime.fromMillisecondsSinceEpoch(0);
-  // List<dynamic> L000 = [];
+  List<dynamic> L000 = [];
   // List<dynamic> L001 = [];
   // List<dynamic> L002 = [];
   // List<dynamic> L003 = [];
@@ -318,7 +320,7 @@ class NewModel {
   // List<dynamic> L019 = [];
   // List<dynamic> L020 = [];
 
-  // OtherModel C000 = OtherModel();
+  Test5Model C000 = Test5Model();
   // OtherModel C001 = OtherModel();
   // OtherModel C002 = OtherModel();
   // OtherModel C003 = OtherModel();
@@ -340,7 +342,7 @@ class NewModel {
   // OtherModel C019 = OtherModel();
   // OtherModel C020 = OtherModel();
   //
-  // List<OtherModel> J000 = [];
+  List<Test5Model> J000 = [];
   // List<OtherModel> J001 = [];
   // List<OtherModel> J002 = [];
   // List<OtherModel> J003 = [];
@@ -362,7 +364,7 @@ class NewModel {
   // List<OtherModel> J019 = [];
   // List<OtherModel> J020 = [];
 
-  // SomeEnum E000 = SomeEnum.NotSelected;
+  Test4Enum E000 = Test4Enum.NotSelected;
   // SomeEnum E001 = SomeEnum.NotSelected;
   // SomeEnum E002 = SomeEnum.NotSelected;
   // SomeEnum E003 = SomeEnum.NotSelected;
@@ -496,7 +498,7 @@ class NewModel {
       // 'I097': I097.toString(),
       // 'I098': I098.toString(),
       // 'I099': I099.toString(),
-      // 'S000': S000,
+      'S000': S000,
       // 'S001': S001,
       // 'S002': S002,
       // 'S003': S003,
@@ -596,7 +598,7 @@ class NewModel {
       // 'S097': S097,
       // 'S098': S098,
       // 'S099': S099,
-      // 'B000': B000.toString(),
+      'B000': B000.toString(),
       // 'B001': B001.toString(),
       // 'B002': B002.toString(),
       // 'B003': B003.toString(),
@@ -627,7 +629,7 @@ class NewModel {
       // 'B028': B028.toString(),
       // 'B029': B029.toString(),
       // 'B030': B030.toString(),
-      // 'R000': R000.toString(),
+      'R000': R000.toString(),
       // 'R001': R001.toString(),
       // 'R002': R002.toString(),
       // 'R003': R003.toString(),
@@ -658,7 +660,7 @@ class NewModel {
       // 'R028': R028.toString(),
       // 'R029': R029.toString(),
       // 'R030': R030.toString(),
-      // 'T000': T000.millisecondsSinceEpoch.toString(),
+      'T000': T000.millisecondsSinceEpoch.toString(),
       // 'T001': T001.millisecondsSinceEpoch.toString(),
       // 'T002': T002.millisecondsSinceEpoch.toString(),
       // 'T003': T003.millisecondsSinceEpoch.toString(),
@@ -679,7 +681,7 @@ class NewModel {
       // 'T018': T018.millisecondsSinceEpoch.toString(),
       // 'T019': T019.millisecondsSinceEpoch.toString(),
       // 'T020': T020.millisecondsSinceEpoch.toString(),
-      // 'L000': json.encode(L000),
+      'L000': json.encode(L000),
       // 'L001': json.encode(L001),
       // 'L002': json.encode(L002),
       // 'L003': json.encode(L003),
@@ -700,7 +702,7 @@ class NewModel {
       // 'L018': json.encode(L018),
       // 'L019': json.encode(L019),
       // 'L020': json.encode(L020),
-      // 'C000': C000.toBase64QueryString(),
+      'C000': C000.toBase64QueryString(),
       // 'C001': C001.toBase64QueryString(),
       // 'C002': C002.toBase64QueryString(),
       // 'C003': C003.toBase64QueryString(),
@@ -721,7 +723,7 @@ class NewModel {
       // 'C018': C018.toBase64QueryString(),
       // 'C019': C019.toBase64QueryString(),
       // 'C020': C020.toBase64QueryString(),
-      // 'J000': jsonEncode(J000.map((model) => model.toBase64QueryString()).toList()),
+      'J000': jsonEncode(J000.map((model) => model.toBase64QueryString()).toList()),
       // 'J001': jsonEncode(J001.map((model) => model.toBase64QueryString()).toList()),
       // 'J002': jsonEncode(J002.map((model) => model.toBase64QueryString()).toList()),
       // 'J003': jsonEncode(J003.map((model) => model.toBase64QueryString()).toList()),
@@ -742,7 +744,7 @@ class NewModel {
       // 'J018': jsonEncode(J018.map((model) => model.toBase64QueryString()).toList()),
       // 'J019': jsonEncode(J019.map((model) => model.toBase64QueryString()).toList()),
       // 'J020': jsonEncode(J020.map((model) => model.toBase64QueryString()).toList()),
-      // 'E000': E000.toStringValue(),
+      'E000': E000.toStringValue(),
       // 'E001': E001.toStringValue(),
       // 'E002': E002.toStringValue(),
       // 'E003': E003.toStringValue(),
@@ -767,16 +769,16 @@ class NewModel {
     };
   }
 
-  static NewModel fromUrlString(String urlString) {
+  static Test3Model fromUrlString(String urlString) {
     return _fromQueryParams(Uri.parse(urlString).queryParameters);
   }
 
-  static NewModel fromBase64QueryString(String queryUrlString) {
+  static Test3Model fromBase64QueryString(String queryUrlString) {
     return _fromQueryParams(Uri.splitQueryString(utf8.decode(base64.decode(queryUrlString))));
   }
 
-  static NewModel _fromQueryParams(Map<String, String> queryParams) {
-    var obj = NewModel();
+  static Test3Model _fromQueryParams(Map<String, String> queryParams) {
+    var obj = Test3Model();
 
     obj.I000 = int.tryParse(queryParams['I000'] ?? "0") ?? 0;
     // obj.I001 = int.tryParse(queryParams['I001'] ?? "0") ?? 0;
@@ -878,7 +880,7 @@ class NewModel {
     // obj.I097 = int.tryParse(queryParams['I097'] ?? "0") ?? 0;
     // obj.I098 = int.tryParse(queryParams['I098'] ?? "0") ?? 0;
     // obj.I099 = int.tryParse(queryParams['I099'] ?? "0") ?? 0;
-    // obj.S000 = queryParams['S000'] ?? "";
+    obj.S000 = queryParams['S000'] ?? "";
     // obj.S001 = queryParams['S001'] ?? "";
     // obj.S002 = queryParams['S002'] ?? "";
     // obj.S003 = queryParams['S003'] ?? "";
@@ -978,7 +980,7 @@ class NewModel {
     // obj.S097 = queryParams['S097'] ?? "";
     // obj.S098 = queryParams['S098'] ?? "";
     // obj.S099 = queryParams['S099'] ?? "";
-    // obj.B000 = (queryParams['B000'] ?? "false") == "true";
+    obj.B000 = (queryParams['B000'] ?? "false") == "true";
     // obj.B001 = (queryParams['B001'] ?? "false") == "true";
     // obj.B002 = (queryParams['B002'] ?? "false") == "true";
     // obj.B003 = (queryParams['B003'] ?? "false") == "true";
@@ -1009,7 +1011,7 @@ class NewModel {
     // obj.B028 = (queryParams['B028'] ?? "false") == "true";
     // obj.B029 = (queryParams['B029'] ?? "false") == "true";
     // obj.B030 = (queryParams['B030'] ?? "false") == "true";
-    // obj.R000 = double.tryParse(queryParams['R000'] ?? "0.0") ?? 0.0;
+    obj.R000 = double.tryParse(queryParams['R000'] ?? "0.0") ?? 0.0;
     // obj.R001 = double.tryParse(queryParams['R001'] ?? "0.0") ?? 0.0;
     // obj.R002 = double.tryParse(queryParams['R002'] ?? "0.0") ?? 0.0;
     // obj.R003 = double.tryParse(queryParams['R003'] ?? "0.0") ?? 0.0;
@@ -1040,7 +1042,7 @@ class NewModel {
     // obj.R028 = double.tryParse(queryParams['R028'] ?? "0.0") ?? 0.0;
     // obj.R029 = double.tryParse(queryParams['R029'] ?? "0.0") ?? 0.0;
     // obj.R030 = double.tryParse(queryParams['R030'] ?? "0.0") ?? 0.0;
-    // obj.T000 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T000'] ?? "0") ?? 0);
+    obj.T000 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T000'] ?? "0") ?? 0);
     // obj.T001 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T001'] ?? "0") ?? 0);
     // obj.T002 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T002'] ?? "0") ?? 0);
     // obj.T003 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T003'] ?? "0") ?? 0);
@@ -1061,7 +1063,7 @@ class NewModel {
     // obj.T018 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T018'] ?? "0") ?? 0);
     // obj.T019 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T019'] ?? "0") ?? 0);
     // obj.T020 = DateTime.fromMillisecondsSinceEpoch(int.tryParse(queryParams['T020'] ?? "0") ?? 0);
-    // obj.L000 = List<String>.from(json.decode(queryParams['L000'] ?? "[]") ?? []);
+    obj.L000 = List<String>.from(json.decode(queryParams['L000'] ?? "[]") ?? []);
     // obj.L001 = List<String>.from(json.decode(queryParams['L001'] ?? "[]") ?? []);
     // obj.L002 = List<String>.from(json.decode(queryParams['L002'] ?? "[]") ?? []);
     // obj.L003 = List<String>.from(json.decode(queryParams['L003'] ?? "[]") ?? []);
@@ -1082,7 +1084,7 @@ class NewModel {
     // obj.L018 = List<String>.from(json.decode(queryParams['L018'] ?? "[]") ?? []);
     // obj.L019 = List<String>.from(json.decode(queryParams['L019'] ?? "[]") ?? []);
     // obj.L020 = List<String>.from(json.decode(queryParams['L020'] ?? "[]") ?? []);
-    // obj.C000 = OtherModel.fromBase64QueryString(queryParams['C000'] ?? OtherModel().toBase64QueryString());
+    obj.C000 = Test5Model.fromBase64QueryString(queryParams['C000'] ?? Test5Model().toBase64QueryString());
     // obj.C001 = OtherModel.fromBase64QueryString(queryParams['C001'] ?? OtherModel().toBase64QueryString());
     // obj.C002 = OtherModel.fromBase64QueryString(queryParams['C002'] ?? OtherModel().toBase64QueryString());
     // obj.C003 = OtherModel.fromBase64QueryString(queryParams['C003'] ?? OtherModel().toBase64QueryString());
@@ -1103,7 +1105,7 @@ class NewModel {
     // obj.C018 = OtherModel.fromBase64QueryString(queryParams['C018'] ?? OtherModel().toBase64QueryString());
     // obj.C019 = OtherModel.fromBase64QueryString(queryParams['C019'] ?? OtherModel().toBase64QueryString());
     // obj.C020 = OtherModel.fromBase64QueryString(queryParams['C020'] ?? OtherModel().toBase64QueryString());
-    // obj.J000 = List<String>.from(json.decode(queryParams['J000'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    obj.J000 = List<String>.from(json.decode(queryParams['J000'] ?? "[]") ?? []).map((item) => Test5Model.fromBase64QueryString(item)).toList();
     // obj.J001 = List<String>.from(json.decode(queryParams['J001'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
     // obj.J002 = List<String>.from(json.decode(queryParams['J002'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
     // obj.J003 = List<String>.from(json.decode(queryParams['J003'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
@@ -1124,7 +1126,7 @@ class NewModel {
     // obj.J018 = List<String>.from(json.decode(queryParams['J018'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
     // obj.J019 = List<String>.from(json.decode(queryParams['J019'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
     // obj.J020 = List<String>.from(json.decode(queryParams['J020'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.E000 = SomeEnum.fromString(queryParams['E000'] ?? SomeEnum.NotSelected.toStringValue());
+    obj.E000 = Test4Enum.fromString(queryParams['E000'] ?? Test4Enum.NotSelected.toStringValue());
     // obj.E001 = SomeEnum.fromString(queryParams['E001'] ?? SomeEnum.NotSelected.toStringValue());
     // obj.E002 = SomeEnum.fromString(queryParams['E002'] ?? SomeEnum.NotSelected.toStringValue());
     // obj.E003 = SomeEnum.fromString(queryParams['E003'] ?? SomeEnum.NotSelected.toStringValue());
@@ -1254,7 +1256,7 @@ class NewModel {
       // 'I097': I097,
       // 'I098': I098,
       // 'I099': I099,
-      // 'S000': S000,
+      'S000': S000,
       // 'S001': S001,
       // 'S002': S002,
       // 'S003': S003,
@@ -1354,7 +1356,7 @@ class NewModel {
       // 'S097': S097,
       // 'S098': S098,
       // 'S099': S099;
-      // 'B000': B000,
+      'B000': B000,
       // 'B001': B001,
       // 'B002': B002,
       // 'B003': B003,
@@ -1385,7 +1387,7 @@ class NewModel {
       // 'B028': B028,
       // 'B029': B029,
       // 'B030': B030,
-      // 'R000': R000,
+      'R000': R000,
       // 'R001': R001,
       // 'R002': R002,
       // 'R003': R003,
@@ -1416,7 +1418,7 @@ class NewModel {
       // 'R028': R028,
       // 'R029': R029,
       // 'R030': R030,
-      // 'T000': T000.millisecondsSinceEpoch,
+      'T000': T000.millisecondsSinceEpoch,
       // 'T001': T001.millisecondsSinceEpoch,
       // 'T002': T002.millisecondsSinceEpoch,
       // 'T003': T003.millisecondsSinceEpoch,
@@ -1437,7 +1439,7 @@ class NewModel {
       // 'T018': T018.millisecondsSinceEpoch,
       // 'T019': T019.millisecondsSinceEpoch,
       // 'T020': T020.millisecondsSinceEpoch,
-      // 'L000': L000,
+      'L000': L000,
       // 'L001': L001,
       // 'L002': L002,
       // 'L003': L003,
@@ -1458,7 +1460,7 @@ class NewModel {
       // 'L018': L018,
       // 'L019': L019,
       // 'L020': L020,
-      // 'C000': C000.toString(),
+      'C000': C000.toString(),
       // 'C001': C001.toString(),
       // 'C002': C002.toString(),
       // 'C003': C003.toString(),
@@ -1479,7 +1481,7 @@ class NewModel {
       // 'C018': C018.toString(),
       // 'C019': C019.toString(),
       // 'C020': C020.toString(),
-      // 'J000': jsonEncode(J000.map((model) => model.toString()).toList()),
+      'J000': jsonEncode(J000.map((model) => model.toString()).toList()),
       // 'J001': jsonEncode(J001.map((model) => model.toString()).toList()),
       // 'J002': jsonEncode(J002.map((model) => model.toString()).toList()),
       // 'J003': jsonEncode(J003.map((model) => model.toString()).toList()),
@@ -1501,7 +1503,7 @@ class NewModel {
       // 'J019': jsonEncode(J019.map((model) => model.toString()).toList()),
       // 'J020': jsonEncode(J020.map((model) => model.toString()).toList()),
 
-      // 'E000': E000.toStringValue(),
+      'E000': E000.toStringValue(),
       // 'E001': E001.toStringValue(),
       // 'E002': E002.toStringValue(),
       // 'E003': E003.toStringValue(),
